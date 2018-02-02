@@ -7,7 +7,7 @@ in vars.txt, and add an entry to a logfile on CSV format. A new logfile will be 
 month.
 
 Copy config.ini.template to config.ini and edit it, adding the information for your particular
-gateway module. You will have to search for the vendor key, which is typically called a "salt",
+gateway module. You will have to search for the vendor key, which is commonly called a "salt",
 even thought it isn't a salt. Encode the vendor key with Base64.
 
 This is just a quick hack for now (and no, I haven't use Python before, and I'm not a fan),
