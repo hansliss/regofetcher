@@ -1,0 +1,1623 @@
+/dhwCircuits/dhw1/actualTemp
+{ 
+  "id" : "/dhwCircuits/dhw1/actualTemp",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 52.0,
+  "writeable" : 0
+}
+/dhwCircuits/dhw1/charge
+{ 
+  "allowedValues" : [ 
+      "stop",
+      "start"
+    ],
+  "id" : "/dhwCircuits/dhw1/charge",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "stop",
+  "writeable" : 1
+}
+/dhwCircuits/dhw1/chargeDuration
+{ 
+  "id" : "/dhwCircuits/dhw1/chargeDuration",
+  "maxValue" : 192.0,
+  "minValue" : 1.0,
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "mins",
+  "value" : 51.0,
+  "writeable" : 1
+}
+/dhwCircuits/dhw1/currentSetpoint
+{ 
+  "id" : "/dhwCircuits/dhw1/currentSetpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 58.0,
+  "writeable" : 0
+}
+/dhwCircuits/dhw1/operationMode
+{ 
+  "allowedValues" : [ 
+      "Off",
+      "low",
+      "high",
+      "ownprogram"
+    ],
+  "id" : "/dhwCircuits/dhw1/operationMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "high",
+  "writeable" : 1
+}
+/dhwCircuits/dhw1/singleChargeSetpoint
+{ 
+  "id" : "/dhwCircuits/dhw1/singleChargeSetpoint",
+  "maxValue" : 70.0,
+  "minValue" : 50.0,
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 65.0,
+  "writeable" : 1
+}
+/dhwCircuits/dhw1/status
+{ 
+  "allowedValues" : [ 
+      "INACTIVE",
+      "ACTIVE"
+    ],
+  "id" : "/dhwCircuits/dhw1/status",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "ACTIVE",
+  "writeable" : 0
+}
+/dhwCircuits/dhw1/temperatureLevels/high
+{ 
+  "id" : "/dhwCircuits/dhw1/temperatureLevels/high",
+  "maxValue" : 50.0,
+  "minValue" : 40.0,
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 52.0,
+  "writeable" : 1
+}
+/dhwCircuits/dhw1/temperatureLevels/off
+{ 
+  "id" : "/dhwCircuits/dhw1/temperatureLevels/off",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/dhwCircuits/dhw1/waterFlow
+{ 
+  "id" : "/dhwCircuits/dhw1/waterFlow",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "l/min",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/dhwCircuits/dhw1/workingTime
+{ 
+  "id" : "/dhwCircuits/dhw1/workingTime",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "mins",
+  "value" : 0,
+  "writeable" : 0
+}
+/gateway/DateTime
+{ 
+  "id" : "/gateway/DateTime",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "2018-02-01T17:50:06",
+  "writeable" : 1
+}
+/gateway/instAccess
+{ 
+  "allowedValues" : [ 
+      "off",
+      "on"
+    ],
+  "id" : "/gateway/instAccess",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "off",
+  "writeable" : 1
+}
+/gateway/instWriteAccess
+{ 
+  "allowedValues" : [ 
+      "off",
+      "on"
+    ],
+  "id" : "/gateway/instWriteAccess",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "off",
+  "writeable" : 1
+}
+/gateway/uuid
+{ 
+  "allowedValues" : [ "<uuid>" ],
+  "id" : "/gateway/uuid",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "<uuid>",
+  "writeable" : 0
+}
+/gateway/versionFirmware
+{ 
+  "id" : "/gateway/versionFirmware",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "04.03.02",
+  "writeable" : 0
+}
+/gateway/versionHardware
+{ 
+  "id" : "/gateway/versionHardware",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "iCom_Low_NSC_v1",
+  "writeable" : 0
+}
+/heatingCircuits/hc1/activeSwitchProgram
+{ 
+  "allowedValues" : [ 
+      "A",
+      "B"
+    ],
+  "id" : "/heatingCircuits/hc1/activeSwitchProgram",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "A",
+  "writeable" : 1
+}
+/heatingCircuits/hc1/actualSupplyTemperature
+{ 
+  "id" : "/heatingCircuits/hc1/actualSupplyTemperature",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 35.1,
+  "writeable" : 0
+}
+/heatingCircuits/hc1/currentRoomSetpoint
+{ 
+  "id" : "/heatingCircuits/hc1/currentRoomSetpoint",
+  "recordable" : 0,
+  "state" : [ { "off" : 0.0 } ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 21.0,
+  "writeable" : 0
+}
+/heatingCircuits/hc1/manualRoomSetpoint
+{ 
+  "id" : "/heatingCircuits/hc1/manualRoomSetpoint",
+  "maxValue" : 30.0,
+  "minValue" : 5.0,
+  "recordable" : 0,
+  "state" : [ { "off" : 0.0 } ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 19.0,
+  "writeable" : 1
+}
+/heatingCircuits/hc1/operationMode
+{ 
+  "allowedValues" : [ 
+      "auto",
+      "manual"
+    ],
+  "id" : "/heatingCircuits/hc1/operationMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "auto",
+  "writeable" : 1
+}
+/heatingCircuits/hc1/pumpModulation
+{ 
+  "id" : "/heatingCircuits/hc1/pumpModulation",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 1.0,
+  "writeable" : 0
+}
+/heatingCircuits/hc1/roomtemperature
+{ 
+  "id" : "/heatingCircuits/hc1/roomtemperature",
+  "recordable" : 1,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 22.1,
+  "writeable" : 0
+}
+/heatingCircuits/hc1/status
+{ 
+  "allowedValues" : [ 
+      "INACTIVE",
+      "ACTIVE"
+    ],
+  "id" : "/heatingCircuits/hc1/status",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "ACTIVE",
+  "writeable" : 0
+}
+/heatingCircuits/hc1/switchProgramMode
+{ 
+  "allowedValues" : [ "levels" ],
+  "id" : "/heatingCircuits/hc1/switchProgramMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "levels",
+  "writeable" : 1
+}
+/heatingCircuits/hc1/switchPrograms/A
+{ 
+  "id" : "/heatingCircuits/hc1/switchPrograms/A",
+  "maxNbOfSwitchPoints" : 14,
+  "maxNbOfSwitchPointsPerDay" : 2,
+  "setpointProperty" : { 
+      "id" : "/heatingCircuits/hc1/temperatureLevels",
+      "uri" : "http://10.0.2.5/heatingCircuits/hc1/temperatureLevels"
+    },
+  "switchPoints" : [ 
+      { 
+        "dayOfWeek" : "Mo",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "Mo",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Tu",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "Tu",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "We",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "We",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Th",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "Th",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Fr",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "Fr",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Sa",
+        "setpoint" : "comfort2",
+        "time" : 480
+      },
+      { 
+        "dayOfWeek" : "Sa",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Su",
+        "setpoint" : "comfort2",
+        "time" : 480
+      },
+      { 
+        "dayOfWeek" : "Su",
+        "setpoint" : "eco",
+        "time" : 1380
+      }
+    ],
+  "switchPointTimeRaster" : 15,
+  "type" : "switchProgram",
+  "writeable" : 1
+}
+/heatingCircuits/hc1/switchPrograms/B
+{ 
+  "id" : "/heatingCircuits/hc1/switchPrograms/B",
+  "maxNbOfSwitchPoints" : 14,
+  "maxNbOfSwitchPointsPerDay" : 2,
+  "setpointProperty" : { 
+      "id" : "/heatingCircuits/hc1/temperatureLevels",
+      "uri" : "http://10.0.2.5/heatingCircuits/hc1/temperatureLevels"
+    },
+  "switchPoints" : [ 
+      { 
+        "dayOfWeek" : "Mo",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "Mo",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Tu",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "Tu",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "We",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "We",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Th",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "Th",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Fr",
+        "setpoint" : "comfort2",
+        "time" : 360
+      },
+      { 
+        "dayOfWeek" : "Fr",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Sa",
+        "setpoint" : "comfort2",
+        "time" : 480
+      },
+      { 
+        "dayOfWeek" : "Sa",
+        "setpoint" : "eco",
+        "time" : 1380
+      },
+      { 
+        "dayOfWeek" : "Su",
+        "setpoint" : "comfort2",
+        "time" : 480
+      },
+      { 
+        "dayOfWeek" : "Su",
+        "setpoint" : "eco",
+        "time" : 1380
+      }
+    ],
+  "switchPointTimeRaster" : 15,
+  "type" : "switchProgram",
+  "writeable" : 1
+}
+/heatingCircuits/hc1/temperatureLevels/comfort2
+{ 
+  "id" : "/heatingCircuits/hc1/temperatureLevels/comfort2",
+  "maxValue" : 30.0,
+  "minValue" : 18.5,
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 21.0,
+  "writeable" : 1
+}
+/heatingCircuits/hc1/temperatureLevels/eco
+{ 
+  "id" : "/heatingCircuits/hc1/temperatureLevels/eco",
+  "maxValue" : 20.5,
+  "minValue" : 5.0,
+  "recordable" : 0,
+  "state" : [ { "off" : 0.0 } ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 18.0,
+  "writeable" : 1
+}
+/heatingCircuits/hc1/temperatureRoomSetpoint
+{ 
+  "id" : "/heatingCircuits/hc1/temperatureRoomSetpoint",
+  "maxValue" : 30.0,
+  "minValue" : 5.0,
+  "recordable" : 0,
+  "state" : [ { "off" : 0.0 } ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 19.0,
+  "writeable" : 1
+}
+/heatingCircuits/hc1/temporaryRoomSetpoint
+{ 
+  "id" : "/heatingCircuits/hc1/temporaryRoomSetpoint",
+  "maxValue" : 30.0,
+  "minValue" : 5.0,
+  "recordable" : 0,
+  "state" : [ 
+      { "off" : 0.0 },
+      { "na" : -0.5 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : -1.0,
+  "writeable" : 1
+}
+/heatSources/actualCHPower
+{ 
+  "id" : "/heatSources/actualCHPower",
+  "recordable" : 1,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 6.0,
+  "writeable" : 0
+}
+/heatSources/actualDHWPower
+{ 
+  "id" : "/heatSources/actualDHWPower",
+  "recordable" : 1,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/heatSources/actualModulation
+{ 
+  "id" : "/heatSources/actualModulation",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 25.0,
+  "writeable" : 0
+}
+/heatSources/actualPower
+{ 
+  "id" : "/heatSources/actualPower",
+  "recordable" : 1,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 6.0,
+  "writeable" : 0
+}
+/heatSources/actualSupplyTemperature
+{ 
+  "id" : "/heatSources/actualSupplyTemperature",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 35.1,
+  "writeable" : 0
+}
+/heatSources/applianceSupplyTemperature
+{ 
+  "id" : "/heatSources/applianceSupplyTemperature",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 35.5,
+  "writeable" : 0
+}
+/heatSources/burnerModulationSetpoint
+{ 
+  "id" : "/heatSources/burnerModulationSetpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 15.0,
+  "writeable" : 0
+}
+/heatSources/burnerPowerSetpoint
+{ 
+  "id" : "/heatSources/burnerPowerSetpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 3.0,
+  "writeable" : 0
+}
+/heatSources/ChimneySweeper
+{ 
+  "id" : "/heatSources/ChimneySweeper",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "off",
+  "writeable" : 0
+}
+/heatSources/CHpumpModulation
+{ 
+  "id" : "/heatSources/CHpumpModulation",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 1.0,
+  "writeable" : 0
+}
+/heatSources/flameCurrent
+{ 
+  "id" : "/heatSources/flameCurrent",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "ÂµA",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/heatSources/flameStatus
+{ 
+  "id" : "/heatSources/flameStatus",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "off",
+  "writeable" : 0
+}
+/heatSources/hs1/actualModulation
+{ 
+  "id" : "/heatSources/hs1/actualModulation",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 25.0,
+  "writeable" : 0
+}
+/heatSources/hs1/actualPower
+{ 
+  "id" : "/heatSources/hs1/actualPower",
+  "recordable" : 1,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 6.0,
+  "writeable" : 0
+}
+/heatSources/hs1/energyReservoir
+{ 
+  "id" : "/heatSources/hs1/energyReservoir",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kWh",
+  "value" : 0.0,
+  "writeable" : 1
+}
+/heatSources/hs1/flameStatus
+{ 
+  "id" : "/heatSources/hs1/flameStatus",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "off",
+  "writeable" : 0
+}
+/heatSources/hs1/fuel/caloricValue
+{ 
+  "id" : "/heatSources/hs1/fuel/caloricValue",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kWh",
+  "value" : 11.5,
+  "writeable" : 1
+}
+/heatSources/hs1/fuelConsmptCorrFactor
+{ 
+  "id" : "/heatSources/hs1/fuelConsmptCorrFactor",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : " ",
+  "value" : 1.0,
+  "writeable" : 1
+}
+/heatSources/hs1/fuel/density
+{ 
+  "id" : "/heatSources/hs1/fuel/density",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kg/l",
+  "value" : 0.82,
+  "writeable" : 1
+}
+/heatSources/hs1/info
+{ 
+  "id" : "/heatSources/hs1/info",
+  "recordable" : 0,
+  "type" : "systeminfo",
+  "values" : [ { 
+        "Id" : "20007",
+        "No" : "000000000000000000000000000000000000000000000000000000",
+        "Tok" : "8",
+        "Ver" : "100"
+      } ],
+  "writeable" : 0
+}
+/heatSources/hs1/nominalFuelConsumption
+{ 
+  "id" : "/heatSources/hs1/nominalFuelConsumption",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "l/h",
+  "value" : 1.8,
+  "writeable" : 1
+}
+/heatSources/hs1/reservoirAlert
+{ 
+  "id" : "/heatSources/hs1/reservoirAlert",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kWh",
+  "value" : 0.0,
+  "writeable" : 1
+}
+/heatSources/hs1/type
+{ 
+  "id" : "/heatSources/hs1/type",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "Heatpump",
+  "writeable" : 0
+}
+/heatSources/info
+{ 
+  "id" : "/heatSources/info",
+  "recordable" : 0,
+  "type" : "systeminfo",
+  "values" : [ { 
+        "Id" : "20007",
+        "No" : "000000000000000000000000000000000000000000000000000000",
+        "Tok" : "8",
+        "Ver" : "100"
+      } ],
+  "writeable" : 0
+}
+/heatSources/nominalCHPower
+{ 
+  "id" : "/heatSources/nominalCHPower",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 24.0,
+  "writeable" : 1
+}
+/heatSources/nominalDHWPower
+{ 
+  "id" : "/heatSources/nominalDHWPower",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 24.0,
+  "writeable" : 0
+}
+/heatSources/numberOfStarts
+{ 
+  "id" : "/heatSources/numberOfStarts",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : " ",
+  "value" : 5886,
+  "writeable" : 0
+}
+/heatSources/powerSetpoint
+{ 
+  "id" : "/heatSources/powerSetpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 15.0,
+  "writeable" : 0
+}
+/heatSources/returnTemperature
+{ 
+  "id" : "/heatSources/returnTemperature",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 32.5,
+  "writeable" : 0
+}
+/heatSources/supplyTemperatureSetpoint
+{ 
+  "id" : "/heatSources/supplyTemperatureSetpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 34.0,
+  "writeable" : 0
+}
+/heatSources/systemPressure
+{ 
+  "id" : "/heatSources/systemPressure",
+  "recordable" : 0,
+  "state" : [ { "na" : -0.1 } ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "bar",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/heatSources/workingTime/centralHeating
+{ 
+  "id" : "/heatSources/workingTime/centralHeating",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "mins",
+  "value" : 0,
+  "writeable" : 0
+}
+/heatSources/workingTime/secondBurner
+{ 
+  "id" : "/heatSources/workingTime/secondBurner",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "mins",
+  "value" : 0,
+  "writeable" : 0
+}
+/heatSources/workingTime/totalSystem
+{ 
+  "id" : "/heatSources/workingTime/totalSystem",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "s",
+  "value" : 28824118,
+  "writeable" : 0
+}
+/notifications
+{ 
+  "id" : "/notifications",
+  "recordable" : 0,
+  "type" : "errorList",
+  "values" : [  ],
+  "writeable" : 0
+}
+/system/appliance/actualPower
+{ 
+  "id" : "/system/appliance/actualPower",
+  "recordable" : 1,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 25.0,
+  "writeable" : 0
+}
+/system/appliance/actualSupplyTemperature
+{ 
+  "id" : "/system/appliance/actualSupplyTemperature",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 35.1,
+  "writeable" : 0
+}
+/system/appliance/ChimneySweeper
+{ 
+  "id" : "/system/appliance/ChimneySweeper",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : " ",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/system/appliance/CHpumpModulation
+{ 
+  "id" : "/system/appliance/CHpumpModulation",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 1.0,
+  "writeable" : 0
+}
+/system/appliance/flameCurrent
+{ 
+  "id" : "/system/appliance/flameCurrent",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "ÂµA",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/system/appliance/nominalBurnerLoad
+{ 
+  "id" : "/system/appliance/nominalBurnerLoad",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 24.0,
+  "writeable" : 0
+}
+/system/appliance/numberOfStarts
+{ 
+  "id" : "/system/appliance/numberOfStarts",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : " ",
+  "value" : 0,
+  "writeable" : 0
+}
+/system/appliance/powerSetpoint
+{ 
+  "id" : "/system/appliance/powerSetpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 15.0,
+  "writeable" : 0
+}
+/system/appliance/systemPressure
+{ 
+  "id" : "/system/appliance/systemPressure",
+  "recordable" : 0,
+  "state" : [ { "na" : -0.1 } ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "bar",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/system/appliance/workingTime/centralHeating
+{ 
+  "id" : "/system/appliance/workingTime/centralHeating",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "mins",
+  "value" : 0,
+  "writeable" : 0
+}
+/system/appliance/workingTime/secondBurner
+{ 
+  "id" : "/system/appliance/workingTime/secondBurner",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "mins",
+  "value" : 0,
+  "writeable" : 0
+}
+/system/appliance/workingTime/totalSystem
+{ 
+  "id" : "/system/appliance/workingTime/totalSystem",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "mins",
+  "value" : 0,
+  "writeable" : 0
+}
+/system/brand
+{ 
+  "id" : "/system/brand",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "IVT",
+  "writeable" : 0
+}
+/system/bus
+{ 
+  "id" : "/system/bus",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "EMS2_0",
+  "writeable" : 0
+}
+/system/healthStatus
+{ 
+  "id" : "/system/healthStatus",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "ok",
+  "writeable" : 0
+}
+/system/heatSources/hs1/actualModulation
+{ 
+  "id" : "/system/heatSources/hs1/actualModulation",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "%",
+  "value" : 25.0,
+  "writeable" : 0
+}
+/system/heatSources/hs1/actualPower
+{ 
+  "id" : "/system/heatSources/hs1/actualPower",
+  "recordable" : 1,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kW",
+  "value" : 6.0,
+  "writeable" : 0
+}
+/system/heatSources/hs1/energyReservoir
+{ 
+  "id" : "/system/heatSources/hs1/energyReservoir",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kWh",
+  "value" : 0.0,
+  "writeable" : 1
+}
+/system/heatSources/hs1/fuel/caloricValue
+{ 
+  "id" : "/system/heatSources/hs1/fuel/caloricValue",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kWh",
+  "value" : 11.5,
+  "writeable" : 1
+}
+/system/heatSources/hs1/fuelConsmptCorrFactor
+{ 
+  "id" : "/system/heatSources/hs1/fuelConsmptCorrFactor",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : " ",
+  "value" : 1.0,
+  "writeable" : 1
+}
+/system/heatSources/hs1/fuel/density
+{ 
+  "id" : "/system/heatSources/hs1/fuel/density",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kg/l",
+  "value" : 0.82,
+  "writeable" : 1
+}
+/system/heatSources/hs1/nominalFuelConsumption
+{ 
+  "id" : "/system/heatSources/hs1/nominalFuelConsumption",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "l/h",
+  "value" : 1.8,
+  "writeable" : 1
+}
+/system/heatSources/hs1/reservoirAlert
+{ 
+  "id" : "/system/heatSources/hs1/reservoirAlert",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "kWh",
+  "value" : 0.0,
+  "writeable" : 1
+}
+/system/holidayModes/hm1/assignedTo
+{ 
+  "allowedValues" : [ 
+      "hc1",
+      "hc2",
+      "hc3",
+      "hc4",
+      "dhw1",
+      "dhw2"
+    ],
+  "id" : "/system/holidayModes/hm1/assignedTo",
+  "recordable" : 0,
+  "type" : "arrayData",
+  "values" : [  ],
+  "writeable" : 1
+}
+/system/holidayModes/hm1/dhwMode
+{ 
+  "allowedValues" : [ 
+      "OFF",
+      "TD_OFF"
+    ],
+  "id" : "/system/holidayModes/hm1/dhwMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "OFF",
+  "writeable" : 1
+}
+/system/holidayModes/hm1/hcMode
+{ 
+  "allowedValues" : [ 
+      "AUTO_SAT",
+      "FIX_TEMP",
+      "OFF",
+      "ECO"
+    ],
+  "id" : "/system/holidayModes/hm1/hcMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "ECO",
+  "writeable" : 1
+}
+/system/holidayModes/hm1/startStop
+{ 
+  "id" : "/system/holidayModes/hm1/startStop",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "2009-01-01/2009-01-01",
+  "writeable" : 1
+}
+/system/holidayModes/hm2/assignedTo
+{ 
+  "allowedValues" : [ 
+      "hc1",
+      "hc2",
+      "hc3",
+      "hc4",
+      "dhw1",
+      "dhw2"
+    ],
+  "id" : "/system/holidayModes/hm2/assignedTo",
+  "recordable" : 0,
+  "type" : "arrayData",
+  "values" : [  ],
+  "writeable" : 1
+}
+/system/holidayModes/hm2/dhwMode
+{ 
+  "allowedValues" : [ 
+      "OFF",
+      "TD_OFF"
+    ],
+  "id" : "/system/holidayModes/hm2/dhwMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "OFF",
+  "writeable" : 1
+}
+/system/holidayModes/hm2/hcMode
+{ 
+  "allowedValues" : [ 
+      "AUTO_SAT",
+      "FIX_TEMP",
+      "OFF",
+      "ECO"
+    ],
+  "id" : "/system/holidayModes/hm2/hcMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "ECO",
+  "writeable" : 1
+}
+/system/holidayModes/hm2/startStop
+{ 
+  "id" : "/system/holidayModes/hm2/startStop",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "2009-01-01/2009-01-01",
+  "writeable" : 1
+}
+/system/holidayModes/hm3/assignedTo
+{ 
+  "allowedValues" : [ 
+      "hc1",
+      "hc2",
+      "hc3",
+      "hc4",
+      "dhw1",
+      "dhw2"
+    ],
+  "id" : "/system/holidayModes/hm3/assignedTo",
+  "recordable" : 0,
+  "type" : "arrayData",
+  "values" : [  ],
+  "writeable" : 1
+}
+/system/holidayModes/hm3/dhwMode
+{ 
+  "allowedValues" : [ 
+      "OFF",
+      "TD_OFF"
+    ],
+  "id" : "/system/holidayModes/hm3/dhwMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "OFF",
+  "writeable" : 1
+}
+/system/holidayModes/hm3/hcMode
+{ 
+  "allowedValues" : [ 
+      "AUTO_SAT",
+      "FIX_TEMP",
+      "OFF",
+      "ECO"
+    ],
+  "id" : "/system/holidayModes/hm3/hcMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "ECO",
+  "writeable" : 1
+}
+/system/holidayModes/hm3/startStop
+{ 
+  "id" : "/system/holidayModes/hm3/startStop",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "2009-01-01/2009-01-01",
+  "writeable" : 1
+}
+/system/holidayModes/hm4/assignedTo
+{ 
+  "allowedValues" : [ 
+      "hc1",
+      "hc2",
+      "hc3",
+      "hc4",
+      "dhw1",
+      "dhw2"
+    ],
+  "id" : "/system/holidayModes/hm4/assignedTo",
+  "recordable" : 0,
+  "type" : "arrayData",
+  "values" : [  ],
+  "writeable" : 1
+}
+/system/holidayModes/hm4/dhwMode
+{ 
+  "allowedValues" : [ 
+      "OFF",
+      "TD_OFF"
+    ],
+  "id" : "/system/holidayModes/hm4/dhwMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "OFF",
+  "writeable" : 1
+}
+/system/holidayModes/hm4/hcMode
+{ 
+  "allowedValues" : [ 
+      "AUTO_SAT",
+      "FIX_TEMP",
+      "OFF",
+      "ECO"
+    ],
+  "id" : "/system/holidayModes/hm4/hcMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "ECO",
+  "writeable" : 1
+}
+/system/holidayModes/hm4/startStop
+{ 
+  "id" : "/system/holidayModes/hm4/startStop",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "2009-01-01/2009-01-01",
+  "writeable" : 1
+}
+/system/holidayModes/hm5/assignedTo
+{ 
+  "allowedValues" : [ 
+      "hc1",
+      "hc2",
+      "hc3",
+      "hc4",
+      "dhw1",
+      "dhw2"
+    ],
+  "id" : "/system/holidayModes/hm5/assignedTo",
+  "recordable" : 0,
+  "type" : "arrayData",
+  "values" : [  ],
+  "writeable" : 1
+}
+/system/holidayModes/hm5/dhwMode
+{ 
+  "allowedValues" : [ 
+      "OFF",
+      "TD_OFF"
+    ],
+  "id" : "/system/holidayModes/hm5/dhwMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "OFF",
+  "writeable" : 1
+}
+/system/holidayModes/hm5/hcMode
+{ 
+  "allowedValues" : [ 
+      "AUTO_SAT",
+      "FIX_TEMP",
+      "OFF",
+      "ECO"
+    ],
+  "id" : "/system/holidayModes/hm5/hcMode",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "ECO",
+  "writeable" : 1
+}
+/system/holidayModes/hm5/startStop
+{ 
+  "id" : "/system/holidayModes/hm5/startStop",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "2009-01-01/2009-01-01",
+  "writeable" : 1
+}
+/system/minOutdoorTemp
+{ 
+  "id" : "/system/minOutdoorTemp",
+  "maxValue" : 10.0,
+  "minValue" : -35.0,
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : -25.0,
+  "writeable" : 1
+}
+/system/sensors/temperatures/outdoor_t1
+{ 
+  "id" : "/system/sensors/temperatures/outdoor_t1",
+  "recordable" : 1,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 1.5,
+  "writeable" : 0
+}
+/system/sensors/temperatures/return
+{ 
+  "id" : "/system/sensors/temperatures/return",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 32.5,
+  "writeable" : 0
+}
+/system/sensors/temperatures/supply_t1
+{ 
+  "id" : "/system/sensors/temperatures/supply_t1",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 35.1,
+  "writeable" : 0
+}
+/system/sensors/temperatures/supply_t1_setpoint
+{ 
+  "id" : "/system/sensors/temperatures/supply_t1_setpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 34.0,
+  "writeable" : 0
+}
+/system/sensors/temperatures/switch
+{ 
+  "id" : "/system/sensors/temperatures/switch",
+  "recordable" : 0,
+  "state" : [ 
+      { "open" : -3276.8 },
+      { "short" : 3276.7 }
+    ],
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 35.1,
+  "writeable" : 0
+}
+/system/systemType
+{ 
+  "id" : "/system/systemType",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "NSC_ICOM_GATEWAY",
+  "writeable" : 0
+}
+/dhwCircuits/dhw1/temperatureLevels/low
+{ 
+  "id" : "/dhwCircuits/dhw1/temperatureLevels/low",
+  "maxValue" : 47.0,
+  "minValue" : 40.0,
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "C",
+  "value" : 46.0,
+  "writeable" : 1
+}
+/gateway/openIPAccess
+{ 
+  "allowedValues" : [ 
+      "off",
+      "on"
+    ],
+  "id" : "/gateway/openIPAccess",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "off",
+  "writeable" : 1
+}
+/heatSources/fanSpeed_setpoint
+{ 
+  "id" : "/heatSources/fanSpeed_setpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "rpm",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/system/appliance/fanSpeed_setpoint
+{ 
+  "id" : "/system/appliance/fanSpeed_setpoint",
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : "rpm",
+  "value" : 0.0,
+  "writeable" : 0
+}
+/gateway/logging/userAcceptance
+{ 
+  "allowedValues" : [ 
+      "false",
+      "true"
+    ],
+  "id" : "/gateway/logging/userAcceptance",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "false",
+  "writeable" : 1
+}
+/heatSources/energyMonitoring/consumption
+{
+  "id" : "/heatSources/energyMonitoring/consumption",
+  "type" : "floatValue",
+  "writeable" : 1,
+  "recordable" : 0,
+  "value" : -nan,
+  "unitOfMeasure" : "kWh",
+  "minValue" : 0.0,
+  "maxValue" : 4294967296.0
+}
+/heatSources/energyMonitoring/correctionFactor
+{ 
+  "id" : "/heatSources/energyMonitoring/correctionFactor",
+  "maxValue" : 255.0,
+  "minValue" : 0.0,
+  "recordable" : 0,
+  "type" : "floatValue",
+  "unitOfMeasure" : " ",
+  "value" : 255.0,
+  "writeable" : 1
+}
+/heatSources/energyMonitoring/maxTankLevel
+{
+  "id" : "/heatSources/energyMonitoring/maxTankLevel",
+  "type" : "floatValue",
+  "writeable" : 1,
+  "recordable" : 0,
+  "value" : -nan,
+  "unitOfMeasure" : "kWh",
+  "minValue" : 0.0,
+  "maxValue" : 4294967296.0
+}
+/heatSources/energyMonitoring/minTankLevel
+{
+  "id" : "/heatSources/energyMonitoring/minTankLevel",
+  "type" : "floatValue",
+  "writeable" : 1,
+  "recordable" : 0,
+  "value" : -nan,
+  "unitOfMeasure" : "kWh",
+  "minValue" : 0.0,
+  "maxValue" : 4294967296.0
+}
+/heatSources/energyMonitoring/startDateTime
+{ 
+  "id" : "/heatSources/energyMonitoring/startDateTime",
+  "recordable" : 0,
+  "type" : "stringValue",
+  "value" : "2018-01-31T18:47:29",
+  "writeable" : 0
+}
+/heatSources/energyMonitoring/tankLevel
+{
+  "id" : "/heatSources/energyMonitoring/tankLevel",
+  "type" : "floatValue",
+  "writeable" : 1,
+  "recordable" : 0,
+  "value" : -nan,
+  "unitOfMeasure" : "kWh",
+  "minValue" : 0.0,
+  "maxValue":4294967296.0
+}
+/application/tbso/enable
+{
+  "id" : "/application/tbso/enable",
+  "type" : "stringValue",
+  "writeable" : 1,
+  "recordable" : 0,
+  "value" : "off",
+  "allowedValues" : ["off","on"]
+}
+/recordings/heatingCircuits/hc1/roomtemperature
+{ 
+  "id" : "/recordings/heatingCircuits/hc1/roomtemperature",
+  "interval" : "",
+  "recordable" : 0,
+  "recordedResource" : { 
+      "id" : "/heatingCircuits/hc1/roomtemperature",
+      "uri" : "http://10.0.2.5/heatingCircuits/hc1/roomtemperature"
+    },
+  "recording" : [  ],
+  "recording-type" : "actual",
+  "sampleRate" : "",
+  "type" : "yRecording",
+  "writeable" : 0
+}
+/recordings/heatSources/actualCHPower
+{ 
+  "id" : "/recordings/heatSources/actualCHPower",
+  "interval" : "",
+  "recordable" : 0,
+  "recordedResource" : { 
+      "id" : "/heatSources/actualCHPower",
+      "uri" : "http://10.0.2.5/heatSources/actualCHPower"
+    },
+  "recording" : [  ],
+  "recording-type" : "actual",
+  "sampleRate" : "",
+  "type" : "yRecording",
+  "writeable" : 0
+}
+/recordings/heatSources/actualDHWPower
+{ 
+  "id" : "/recordings/heatSources/actualDHWPower",
+  "interval" : "",
+  "recordable" : 0,
+  "recordedResource" : { 
+      "id" : "/heatSources/actualDHWPower",
+      "uri" : "http://10.0.2.5/heatSources/actualDHWPower"
+    },
+  "recording" : [  ],
+  "recording-type" : "actual",
+  "sampleRate" : "",
+  "type" : "yRecording",
+  "writeable" : 0
+}
+/recordings/heatSources/actualPower
+{ 
+  "id" : "/recordings/heatSources/actualPower",
+  "interval" : "",
+  "recordable" : 0,
+  "recordedResource" : { 
+      "id" : "/heatSources/actualPower",
+      "uri" : "http://10.0.2.5/heatSources/actualPower"
+    },
+  "recording" : [  ],
+  "recording-type" : "actual",
+  "sampleRate" : "",
+  "type" : "yRecording",
+  "writeable" : 0
+}
+/recordings/heatSources/hs1/actualPower
+{ 
+  "id" : "/recordings/heatSources/hs1/actualPower",
+  "interval" : "",
+  "recordable" : 0,
+  "recordedResource" : { 
+      "id" : "/heatSources/hs1/actualPower",
+      "uri" : "http://10.0.2.5/heatSources/hs1/actualPower"
+    },
+  "recording" : [  ],
+  "recording-type" : "actual",
+  "sampleRate" : "",
+  "type" : "yRecording",
+  "writeable" : 0
+}
+/recordings/system/heatSources/hs1/actualPower
+{ 
+  "id" : "/recordings/system/heatSources/hs1/actualPower",
+  "interval" : "",
+  "recordable" : 0,
+  "recordedResource" : { 
+      "id" : "/system/heatSources/hs1/actualPower",
+      "uri" : "http://10.0.2.5/system/heatSources/hs1/actualPower"
+    },
+  "recording" : [  ],
+  "recording-type" : "actual",
+  "sampleRate" : "",
+  "type" : "yRecording",
+  "writeable" : 0
+}
+/recordings/system/sensors/temperatures/outdoor_t1
+{ 
+  "id" : "/recordings/system/sensors/temperatures/outdoor_t1",
+  "interval" : "",
+  "recordable" : 0,
+  "recordedResource" : { 
+      "id" : "/system/sensors/temperatures/outdoor_t1",
+      "uri" : "http://10.0.2.5/system/sensors/temperatures/outdoor_t1"
+    },
+  "recording" : [  ],
+  "recording-type" : "actual",
+  "sampleRate" : "",
+  "type" : "yRecording",
+  "writeable" : 0
+}
+/recordings/dhwCircuits/dhw1/actualTemp
+{ 
+  "id" : "/recordings/dhwCircuits/dhw1/actualTemp",
+  "interval" : "",
+  "recordable" : 0,
+  "recordedResource" : { 
+      "id" : "/dhwCircuits/dhw1/actualTemp",
+      "uri" : "http://10.0.2.5/dhwCircuits/dhw1/actualTemp"
+    },
+  "recording" : [  ],
+  "recording-type" : "actual",
+  "sampleRate" : "",
+  "type" : "yRecording",
+  "writeable" : 0
+}
+/system/info
