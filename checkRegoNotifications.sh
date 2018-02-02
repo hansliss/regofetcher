@@ -16,7 +16,7 @@ python3 getRegoData.py -c $CONFFILE -s $CONFSECTION -p /notifications -m values 
 if diff $RUNDIR/notifications_save.txt $RUNDIR/notifications_new.txt; then
     rm $RUNDIR/notifications_new.txt
 else
-    Mail -s "Notifications from heat pump" $MAILRCPT < $RUNDIR/notifications_new.txt
+    mail -s "Notifications from heat pump" $MAILRCPT < $RUNDIR/notifications_new.txt
     mv $RUNDIR/notifications_new.txt $RUNDIR/notifications_save.txt
 fi
     
