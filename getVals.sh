@@ -16,5 +16,5 @@ cat $RUNDIR/vars.txt | sed 's/:/ /' | while read var path; do
 done | sed 's/,$//' >> $LOGFILE
 echo >> $LOGFILE
 
-sed 's/#PERIOD#/'"$PERIOD"'/' plot.gpl.tpl | sed 's@#PATH#@'"$RUNDIR"'@' > plot.gpl
-gnuplot plot.gpl
+sed 's/#PERIOD#/'"$PERIOD"'/' $RUNDIR/plot.gpl.tpl | sed 's@#PATH#@'"$RUNDIR"'@' > $RUNDIR/plot.gpl
+gnuplot $RUNDIR/plot.gpl
