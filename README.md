@@ -6,9 +6,9 @@ The shell script will use the Python script to fetch individual values according
 in vars.txt, and add an entry to a logfile on CSV format. A new logfile will be created each
 month.
 
-Edit the config file, adding the information for your particular gateway module. You will have
-to search for the vendor key, which is typically called a "salt", even thought it isn't a salt.
-Encode the vendor key with Base64.
+Copy config.ini.template to config.ini and edit it, adding the information for your particular
+gateway module. You will have to search for the vendor key, which is typically called a "salt",
+even thought it isn't a salt. Encode the vendor key with Base64.
 
 This is just a quick hack for now (and no, I haven't use Python before, and I'm not a fan),
 and may be improved over time. An obvious addition is support for retrieving notifications

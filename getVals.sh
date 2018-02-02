@@ -1,7 +1,8 @@
 #!/bin/sh
 
-RUNDIR=.
-LOGFILE=$RUNDIR/regoVals_`date +"%Y-%m"`.csv
+RUNDIR=/home/hansl/Dropbox/Private/Software/REGO2000
+PERIOD=`date +"%Y-%m"`
+LOGFILE=$RUNDIR/regoVals_$PERIOD.csv
 
 if [ ! -f "$LOGFILE" ]; then
    cat $RUNDIR/vars.txt | sed 's/:/ /' | while read var path; do
@@ -15,3 +16,5 @@ cat $RUNDIR/vars.txt | sed 's/:/ /' | while read var path; do
 done | sed 's/,$//' >> $LOGFILE
 echo >> $LOGFILE
 
+sed 's/#PERIOD#/'"$PERIOD"'/' plot.gpl.tpl | sed 's@#PATH#@'"$RUNDIR"'@' > plot.gpl
+gnuplot plot.gpl
