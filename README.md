@@ -2,7 +2,7 @@
 Scripts to fetch data from IVT REGO2000, Bosch ProControl and Buderus Gateway Logamatic KM200
 and other equipment based on similar network modules.
 
-The shell script will use the Python script to fetch individual values according to the list
+The shell script uses the Python script to fetch individual values according to the list
 in vars.txt, and add an entry to a logfile on CSV format. A new logfile will be created each
 month.
 
