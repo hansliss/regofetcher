@@ -23,3 +23,6 @@ Some examples of parameter formats for "/recordings":
 ?interval=2018-01-31
 ?interval=2018-W5
 ?interval=2018-01
+
+getVals.sh automatically generates a plot of two of the values, using gnuplot. You will want
+to play around a bit with this.
