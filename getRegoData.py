@@ -51,6 +51,10 @@ def main():
     elif args.mode == 'value':
         pdata = json.loads(data.decode())
         print(pdata["value"])
+    elif args.mode == 'values':
+        pdata = json.loads(data.decode())
+        for val in pdata["values"]:
+            print(val)
 
 if __name__ == "__main__":
     main()
