@@ -10,9 +10,9 @@ Edit the config file, adding the information for your particular gateway module.
 to search for the vendor key, which is typically called a "salt", even thought it isn't a salt.
 Encode the vendor key with Base64.
 
-This is just a quick hack for now, and may be improved over time. An obvious addition is support
-for retrieving notifications (path: "/notifications") and sending email reminders when there
-are active notifications.
+This is just a quick hack for now (and no, I haven't use Python before, and I'm not a fan),
+and may be improved over time. An obvious addition is support for retrieving notifications
+(path: "/notifications") and sending email reminders when there are active notifications.
 
 It's also possible to change some setting using the same technique, presumably by encrypting
 input data using the same algorithm, and then using PUT to send it to the gateway. I have not
