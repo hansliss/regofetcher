@@ -11,7 +11,7 @@ if [ ! -f $RUNDIR/notifications_save.txt ]; then
     touch $RUNDIR/notifications_save.txt
 fi
 
-python3 getRegoData.py -c $CONFFILE -s $CONFSECTION -p /notifications -m values > $RUNDIR/notifications_new.txt
+python3 $RUNDIR/getRegoData.py -c $CONFFILE -s $CONFSECTION -p /notifications -m values > $RUNDIR/notifications_new.txt
 
 if diff $RUNDIR/notifications_save.txt $RUNDIR/notifications_new.txt; then
     rm $RUNDIR/notifications_new.txt
