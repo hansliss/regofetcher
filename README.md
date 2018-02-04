@@ -36,6 +36,11 @@ Some examples of parameter formats for "/recordings":
 ?interval=2018-W5
 ?interval=2018-01
 
+-----------------------------------------
 
+If you want to look for valid paths to check on your unit, use the "-x" switch to traverse
+the tree from one or more starting points, and print out all the recognized leaves. Then
+you can check leaf manually to determine what it represents. Use a command like this to
+enumerate the paths:
 
-
+python3 getRegoData.py -c config.ini -s myrego -x -p "/,/dhwCircuits,/heatingCircuits,/recordings,/solarCircuits,/system,/gateway,/heatSources,/notifications"
