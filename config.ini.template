@@ -1,5 +1,5 @@
 [myrego]
-vendorkey: <b64 vendor key or "salt">
+vendorkey: hnhF6XxOKdzlIrmn06PgexUr/63dvtf1/9hC6Yla0eQ=
 devicepassword: <password on network module>
 userpassword: <user password>
 host: <IP address or hostname>
