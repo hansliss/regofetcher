@@ -16,8 +16,8 @@ new ones, or every day while they are active.
 
 Both of these scripts are meant to be run from cron. Here are example crontab entries that will
 run both scripts in /home/pi/rego every ten minutes:
-    */10 * * * * /home/pi/rego/getVals.sh
-    */10 * * * * /home/pi/rego/checkRegoNotifications.sh
+    */10 * * * * /home/pi/rego/getVals.sh /home/pi/rego/config.ini myrego
+    */10 * * * * /home/pi/rego/checkRegoNotifications.sh /home/pi/rego/config.ini myrego
 
 Copy config.ini.template to config.ini and edit it, adding the information for your particular
 gateway module. Depending on the vendor, you may have to find the correct vendor key, which is
