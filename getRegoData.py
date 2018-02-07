@@ -89,6 +89,9 @@ def main() :
         elif args.mode == 'value':
             pdata = json.loads(data.decode())
             print(pdata["value"])
+        elif args.mode == 'values':
+            pdata = json.loads(data.decode())
+            print(json.dumps(pdata["values"], sort_keys=True, indent=4))
 
 if __name__ == "__main__":
     main()
