@@ -3,7 +3,7 @@ vendorkey: hnhF6XxOKdzlIrmn06PgexUr/63dvtf1/9hC6Yla0eQ=
 devicepassword: <password on network module>
 userpassword: <user password>
 host: <IP address or hostname>
-rundir: /home/pi/rego
+rundir: /home/pi/regofetcher
 mailrcpt: Hans@Liss.pp.se
 
 [someotherrego]

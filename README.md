@@ -42,10 +42,10 @@ You will want to play around a bit with this.
 new ones, or every day while they are active.
 
 Both of these scripts are meant to be run from cron. Here are example crontab entries that will
-run both scripts in /home/pi/rego every ten minutes:
+run both scripts in /home/pi/regofetcher every ten minutes:
 ```
-*/10 * * * * /home/pi/rego/getVals.sh /home/pi/rego/config.ini myrego
-5,15,25,35,45,55 * * * * /home/pi/rego/checkRegoNotifications.sh /home/pi/rego/config.ini myrego
+*/10 * * * * /home/pi/regofetcher/getVals.sh /home/pi/regofetcher/config.ini myrego
+5,15,25,35,45,55 * * * * /home/pi/regofetcher/checkRegoNotifications.sh /home/pi/regofetcher/config.ini myrego
 ```
 
 ## Notes
