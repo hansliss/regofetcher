@@ -3,3 +3,11 @@ vendorkey: hnhF6XxOKdzlIrmn06PgexUr/63dvtf1/9hC6Yla0eQ=
 devicepassword: <password on network module>
 userpassword: <user password>
 host: <IP address or hostname>
+rundir: /home/pi/rego
+mailrcpt: Hans@Liss.pp.se
+
+[someotherrego]
+vendorkey: hnhF6XxOKdzlIrmn06PgexUr/63dvtf1/9hC6Yla0eQ=
+devicepassword: foo
+userpassword: bar
+host: baz

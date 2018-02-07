@@ -1,6 +1,10 @@
 #!/bin/sh
 
-RUNDIR=/home/pi/rego
+CONFFILE=$1
+SECTION=$2
+
+RUNDIR=`sed -n '/^\['"$SECTION"'\]/,/^\[/p' $CONFFILE | grep -i "^[ 	]*rundir" | cut -d: -f2 | sed 's/^[ 	]*\(.*\)[ 	]*$/\1/'`
+
 PERIOD=`date +"%Y-%m"`
 LOGFILE=$RUNDIR/regoVals_$PERIOD.csv
 
@@ -12,7 +16,7 @@ if [ ! -f "$LOGFILE" ]; then
 fi
 
 cat $RUNDIR/vars.txt | sed 's/:/ /' | while read var path; do
-    echo -n `python3 $RUNDIR/getRegoData.py -c $RUNDIR/config.ini -s myrego -p $path -m value`,
+    echo -n `python3 $RUNDIR/getRegoData.py -c $CONFFILE -s $SECTION -p $path -m value`,
 done | sed 's/,$//' >> $LOGFILE
 echo >> $LOGFILE
 
