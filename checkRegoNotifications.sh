@@ -14,7 +14,7 @@ fi
 
 python3 $RUNDIR/getRegoData.py -c $CONFFILE -s $SECTION -p /notifications -m values > $RUNDIR/notifications_new.txt
 
-if diff $RUNDIR/notifications_save.txt $RUNDIR/notifications_new.txt; then
+if diff >/dev/null 2>&1 $RUNDIR/notifications_save.txt $RUNDIR/notifications_new.txt; then
     rm $RUNDIR/notifications_new.txt
 else
     mail -s "Notifications from heat pump" $MAILRCPT < $RUNDIR/notifications_new.txt
