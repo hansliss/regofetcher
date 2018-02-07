@@ -48,6 +48,7 @@ run both scripts in /home/pi/rego every ten minutes:
 */10 * * * * /home/pi/rego/checkRegoNotifications.sh /home/pi/rego/config.ini myrego
 ```
 
+## Notes
 This is just a quick hack for now (and no, I haven't used Python before, and I'm not a fan),
 and it may be improved over time.
 
