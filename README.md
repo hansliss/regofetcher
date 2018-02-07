@@ -45,7 +45,7 @@ Both of these scripts are meant to be run from cron. Here are example crontab en
 run both scripts in /home/pi/rego every ten minutes:
 ```
 */10 * * * * /home/pi/rego/getVals.sh /home/pi/rego/config.ini myrego
-*/10 * * * * /home/pi/rego/checkRegoNotifications.sh /home/pi/rego/config.ini myrego
+5,15,25,35,45,55 * * * * /home/pi/rego/checkRegoNotifications.sh /home/pi/rego/config.ini myrego
 ```
 
 ## Notes
