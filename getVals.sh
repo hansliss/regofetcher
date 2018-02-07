@@ -9,15 +9,27 @@ PERIOD=`date +"%Y-%m"`
 LOGFILE=$RUNDIR/regoVals_$PERIOD.csv
 
 if [ ! -f "$LOGFILE" ]; then
-   cat $RUNDIR/vars.txt | sed 's/:/ /' | while read var path; do
-       echo -n "$var,"
-   done | sed 's/,$//' > $LOGFILE
-   echo >> $LOGFILE
+    done=no
+    if [ "$done" = "yes" ]; then
+	echo -n ","
+    fi
+    done=yes
+    grep "^scalar:" $RUNDIR/URLs.txt | cut -d: -f2,3 | sed 's/:/ /' | while read status path; do
+	echo -n "$path"
+    done > $LOGFILE
+    echo >> $LOGFILE
 fi
 
-cat $RUNDIR/vars.txt | sed 's/:/ /' | while read var path; do
-    echo -n `python3 $RUNDIR/getRegoData.py -c $CONFFILE -s $SECTION -p $path -m value`,
-done | sed 's/,$//' >> $LOGFILE
+done=no
+grep "^scalar:" $RUNDIR/URLs.txt | cut -d: -f2,3 | sed 's/:/ /' | while read status path; do
+    if [ "$done" = "yes" ]; then
+	echo -n ","
+    fi
+    done=yes
+    if [ "x$status" = "xon" ]; then
+	echo -n `python3 $RUNDIR/getRegoData.py -c $CONFFILE -s $SECTION -p $path -m value`
+    fi
+done >> $LOGFILE
 echo >> $LOGFILE
 
 sed 's/#PERIOD#/'"$PERIOD"'/g' $RUNDIR/plot.gpl.tpl | sed 's@#PATH#@'"$RUNDIR"'@g' > $RUNDIR/plot.gpl

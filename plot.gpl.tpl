@@ -34,7 +34,7 @@ set size 1,0.7
 set origin 0.0,0.3
 set ylabel "Power Consumption"
 set y2label "Power Consumption"
-plot "#PATH#/regoVals_#PERIOD#.csv" using 1:13 with lines ls 5 axes x1y1 title "Power"
+plot "#PATH#/regoVals_#PERIOD#.csv" using 13:26 with lines ls 5 axes x1y1 title "Power"
 
 set bmargin 5
 set tmargin 0
@@ -46,4 +46,4 @@ set size 1,0.3
 set origin 0.0,0.0
 set ylabel "Outdoor Temperature"
 set y2label "Room Temperature"
-plot "#PATH#/regoVals_#PERIOD#.csv" using 1:26 with lines ls 7 axes x1y1 title "Outdoor temp", "#PATH#/regoVals_#PERIOD#.csv" using 1:7 with lines ls 6 axes x1y2 title "Room temp"
+plot "#PATH#/regoVals_#PERIOD#.csv" using 13:109 with lines ls 7 axes x1y1 title "Outdoor temp", "#PATH#/regoVals_#PERIOD#.csv" using 13:62 with lines ls 6 axes x1y2 title "Room temp"
