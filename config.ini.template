@@ -5,6 +5,7 @@ userpassword: <user password>
 host: <IP address or hostname>
 rundir: /home/pi/regofetcher
 mailrcpt: Hans@Liss.pp.se
+errcodes: /home/pi/regofetcher/IVT_errorcodes.json
 
 [someotherrego]
 vendorkey: hnhF6XxOKdzlIrmn06PgexUr/63dvtf1/9hC6Yla0eQ=

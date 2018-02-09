@@ -1,0 +1,2235 @@
+{
+    "1001": {
+        "alternatives": [
+            {
+                "action": "Check both ends of EMS cabling between the boards.",
+                "reason": "Poor EMS connection between display and installer module."
+            }
+        ],
+        "description": "Room sensor will display error code A21/A22/A23/A24 depending on which heating circuit it controls. The Room sensor has first been installed successfully. Then the EMS bus signal has gone absent from the parent controller (display HMC300/HPC400).",
+        "level": "Customer",
+        "title": "No communication betw. system controller and remote control"
+    },
+    "1010": {
+        "alternatives": [
+            {
+                "action": "Check that accessories for the EMS bus (room control, mixing module, etc.) are properly connected.",
+                "reason": "Break/disruption in EMS connection."
+            },
+            {
+                "action": "Check that the EMS bus (GND) is not in contact with the chassis. On some appliances it has happened that the 3,5 mm tele female connector attached to the BBT port of the inst.module [terminal 23,24,25] is in contact with the chassis. Then interference can enter the EMS bus via ground. Insulate the connector.",
+                "reason": "Interference on the EMS bus."
+            }
+        ],
+        "description": "The local device hasn't received its EMS token from the EMS bus master for a certain amount of time.",
+        "level": "Customer",
+        "svdescription": "St\u00f6rningar i kommunikationsbussen EMS. Kontakta Er installat\u00f6r.",
+        "svheader": "Ingen kommunikation via bussf\u00f6rbindelsen EMS. ",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "No communication via EMS BUS connection"
+    },
+    "1051": {
+        "alternatives": [
+            {
+                "action": "The correct setting is made in Service menu >> Set heating/cooling >> Heating circ. 1 >> Programming unit = RC100/CR10. See room sensors' installer guide for more information.",
+                "reason": "Incorrect setting in software. Service menu >> Set heating/cooling >> Heating circ. 1 >> Ext. room temp. sensor, shall always be set to No."
+            }
+        ],
+        "description": "The module for external room temperature sensor has not been developed. The alarm is triggered if the installer still selects this module to control a heating circuit.",
+        "level": "Customer",
+        "title": "No communication with external room temp. sensor module"
+    },
+    "1052": {
+        "alternatives": [
+            {
+                "action": "The correct setting is made in Service menu >> Set heating/cooling >> Heating circ. 2 >> Programming unit = RC100/CR10. See room sensors' installer guide for more information.",
+                "reason": "Incorrect setting in software. Service menu >> Set heating/cooling >> Heating circ. 2 >> Ext. room temp. sensor, shall always be set to No."
+            }
+        ],
+        "description": "The module for external room temperature sensor has not been developed. The alarm is triggered if the installer still selects this module to control a heating circuit.",
+        "level": "Customer",
+        "title": "No communication with external room temp. sensor module"
+    },
+    "1053": {
+        "alternatives": [
+            {
+                "action": "The correct setting is made in Service menu >> Set heating/cooling >> Heating circ. 3 >> Programming unit = RC100/CR10. See room sensors' installer guide for more information.",
+                "reason": "Incorrect setting in software. Service menu >> Set heating/cooling >> Heating circ. 3 >> Ext. room temp. sensor, shall always be set to No."
+            }
+        ],
+        "description": "The module for external room temperature sensor has not been developed. The alarm is triggered if the installer still selects this module to control a heating circuit.",
+        "level": "Customer",
+        "title": "No communication with external room temp. sensor module"
+    },
+    "1054": {
+        "alternatives": [
+            {
+                "action": "The correct setting is made in Service menu >> Set heating/cooling >> Heating circ. 4 >> Programming unit = RC100/CR10. See room sensors' installer guide for more information.",
+                "reason": "Incorrect setting in software. Service menu >> Set heating/cooling >> Heating circ. 4 >> Ext. room temp. sensor, shall always be set to No."
+            }
+        ],
+        "description": "The module for external room temperature sensor has not been developed. The alarm is triggered if the installer still selects this module to control a heating circuit.",
+        "level": "Customer",
+        "title": "No communication with external room temp. sensor module"
+    },
+    "1081": {
+        "alternatives": [
+            {
+                "action": "Configure the room sensor for remote control \"Fb\". See room sensors' installation guide for more information.",
+                "reason": "The display unit in the indoor unit is always the controller in the system, and more than one is not allowed."
+            }
+        ],
+        "description": "The room sensor for heating circuit 1 has been incorrectly configured as a controller (\"CO\"/\"SC\").",
+        "level": "Customer",
+        "svdescription": "Rumstermostaten \u00e4r feladresserad. Kontakta installat\u00f6ren.",
+        "svheader": "Tv\u00e5 huvudreglercentraler i systemet.",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Two master prog units in the system."
+    },
+    "1082": {
+        "alternatives": [
+            {
+                "action": "Configure the room sensor for remote control \"Fb\". See room sensors' installation guide for more information.",
+                "reason": "The display unit in the indoor unit is always the controller in the system, and more than one is not allowed."
+            }
+        ],
+        "description": "The room sensor for heating circuit 2 has been incorrectly configured as a controller (\"CO\"/\"SC\").",
+        "level": "Customer",
+        "title": "Two master prog units in the system."
+    },
+    "1083": {
+        "alternatives": [
+            {
+                "action": "Configure the room sensor for remote control \"Fb\". See room sensors' installation guide for more information.",
+                "reason": "The display unit in the indoor unit is always the controller in the system, and more than one is not allowed."
+            }
+        ],
+        "description": "The room sensor for heating circuit 3 has been incorrectly configured as a controller (\"CO\"/\"SC\").",
+        "level": "Customer",
+        "title": "Two master prog units in the system."
+    },
+    "1084": {
+        "alternatives": [
+            {
+                "action": "Configure the room sensor for remote control \"Fb\". See room sensors' installation guide for more information.",
+                "reason": "The display unit in the indoor unit is always the controller in the system, and more than one is not allowed."
+            }
+        ],
+        "description": "The room sensor for heating circuit 4 has been incorrectly configured as a controller (\"CO\"/\"SC\").",
+        "level": "Customer",
+        "title": "Two master prog units in the system."
+    },
+    "3061": {
+        "alternatives": [
+            {
+                "action": "Check EMS cabling.",
+                "reason": "Poor connection or improperly installed EMS cable between installer module and mixing module."
+            }
+        ],
+        "description": "A mixing module has previously been installed for heating circuit 1 and now the installer module is unable to communicate with the rooms sensor over the EMS bus.",
+        "level": "Customer",
+        "title": "No communication with mixer module"
+    },
+    "3062": {
+        "alternatives": [
+            {
+                "action": "Check EMS cabling.",
+                "reason": "Poor connection or improperly installed EMS cable between installer module and mixing module."
+            }
+        ],
+        "description": "A mixing module has previously been installed for heating circuit 2 and now the installer module is unable to communicate with the rooms sensor over the EMS bus.",
+        "level": "Customer",
+        "title": "No communication with mixer module"
+    },
+    "3063": {
+        "alternatives": [
+            {
+                "action": "Check EMS cabling.",
+                "reason": "Poor connection or improperly installed EMS cable between installer module and mixing module."
+            }
+        ],
+        "description": "A mixing module has previously been installed for heating circuit 3 and now the installer module is unable to communicate with the rooms sensor over the EMS bus.",
+        "level": "Customer",
+        "title": "No communication with mixer module"
+    },
+    "3064": {
+        "alternatives": [
+            {
+                "action": "Check EMS cabling.",
+                "reason": "Poor connection or improperly installed EMS cable between installer module and mixing module."
+            }
+        ],
+        "description": "A mixing module has previously been installed for heating circuit 4 and now the installer module is unable to communicate with the rooms sensor over the EMS bus.",
+        "level": "Customer",
+        "title": "No communication with mixer module"
+    },
+    "3071": {
+        "alternatives": [
+            {
+                "action": "Check EMS cabling.",
+                "reason": "Poor connection or improperly installed EMS cable between installer module and room sensor."
+            }
+        ],
+        "description": "A room sensor has previously been installed for heating circuit 1 and now the installer module is unable to communicate with the rooms sensor over the EMS bus.",
+        "level": "Customer",
+        "svdescription": "D\u00e5lig kontakt i EMS-kabel mellan rumstermostat och styrkort. Kan \u00e4ven vara st\u00f6rning p.g.a. att en starkstr\u00f6mskabel ligger f\u00f6r n\u00e4ra EMS-kabeln. Kontakta Er installat\u00f6r",
+        "svheader": "Ingen kommunikation med rumsenhet.",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "No communication with remote control"
+    },
+    "3072": {
+        "alternatives": [
+            {
+                "action": "Check EMS cabling.",
+                "reason": "Poor connection or improperly installed EMS cable between installer module and room sensor."
+            }
+        ],
+        "description": "A room sensor has previously been installed for heating circuit 2 and now the installer module is unable to communicate with the rooms sensor over the EMS bus.",
+        "level": "Customer",
+        "title": "No communication with remote control"
+    },
+    "3073": {
+        "alternatives": [
+            {
+                "action": "Check EMS cabling.",
+                "reason": "Poor connection or improperly installed EMS cable between installer module and room sensor."
+            }
+        ],
+        "description": "A room sensor has previously been installed for heating circuit 3 and now the installer module is unable to communicate with the rooms sensor over the EMS bus.",
+        "level": "Customer",
+        "title": "No communication with remote control"
+    },
+    "3074": {
+        "alternatives": [
+            {
+                "action": "Check EMS cabling.",
+                "reason": "Poor connection or improperly installed EMS cable between installer module and room sensor."
+            }
+        ],
+        "description": "A room sensor has previously been installed for heating circuit 4 and now the installer module is unable to communicate with the rooms sensor over the EMS bus.",
+        "level": "Customer",
+        "title": "No communication with remote control"
+    },
+    "3091": {
+        "alternatives": [
+            {
+                "action": "The room sensor must be replaced.",
+                "reason": "Broken room sensor."
+            }
+        ],
+        "description": "The thermistor inside the room sensor for heating circuit 1 is defective. EMS communication is working.",
+        "level": "Customer",
+        "title": "A61 on room sensor. Room temperature sensor faulty"
+    },
+    "3092": {
+        "alternatives": [
+            {
+                "action": "The room sensor must be replaced.",
+                "reason": "Broken room sensor."
+            }
+        ],
+        "description": "The thermistor inside the room sensor for heating circuit 2 is defective. EMS communication is working.",
+        "level": "Customer",
+        "title": "A62 on room sensor. Room temperature sensor faulty"
+    },
+    "3093": {
+        "alternatives": [
+            {
+                "action": "The room sensor must be replaced.",
+                "reason": "Broken room sensor."
+            }
+        ],
+        "description": "The thermistor inside the room sensor for heating circuit 3 is defective. EMS communication is working.",
+        "level": "Customer",
+        "title": "A63 on room sensor. Room temperature sensor faulty"
+    },
+    "3094": {
+        "alternatives": [
+            {
+                "action": "The room sensor must be replaced.",
+                "reason": "Broken room sensor."
+            }
+        ],
+        "description": "The thermistor inside the room sensor for heating circuit 4 is defective. EMS communication is working.",
+        "level": "Customer",
+        "title": "A64 on room sensor. Room temperature sensor faulty"
+    },
+    "5201": {
+        "alternatives": [
+            {
+                "action": "Install outdoor sensor.",
+                "reason": "Outdoor sensor T1 has not been installed."
+            },
+            {
+                "action": "Check signal cable and connection to installer module.",
+                "reason": "Break on signal cable between installer module and sensor."
+            }
+        ],
+        "description": "Warning if the resistance of the outdoor sensor T1 > 179 kOhm (corresponding to a temperature < -50\u00b0C).",
+        "level": "Installer",
+        "title": "Warning Outside temp. sensor T1 open circuit"
+    },
+    "5202": {
+        "alternatives": [
+            {
+                "action": "Check signal cable.",
+                "reason": "Outdoor sensor T1/signal cable shorted."
+            }
+        ],
+        "description": "Warning if the resistance of the outdoor sensor T1 < 824 Ohm (corresponding to a temperature > 70\u00b0C).",
+        "level": "Installer",
+        "title": "Warning Outdoor temp. sensor T1 short circuit"
+    },
+    "5203": {
+        "alternatives": [
+            {
+                "action": "See warning 5302.",
+                "reason": "See warning 5302."
+            },
+            {
+                "action": "Replace inverter.",
+                "reason": "Defective inverter."
+            }
+        ],
+        "description": "Internal high temperature protection in inverter. Alarm if 3 warnings (code 5302) are triggered witin 3 hours, or if the temperature continuously exceeds 80\u00b0C for 30 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Temperature too high on compressor control system"
+    },
+    "5204": {
+        "alternatives": [
+            {
+                "action": "Check signal cable and screw terminal on installer module.",
+                "reason": "Break on signal cable between installer module and sensor."
+            }
+        ],
+        "description": "Warning if the resistance of flow sensor T0 > 30 kOhm (<0\u00b0C).",
+        "level": "Installer",
+        "title": "Warning Z1 Flow temperature sensor T0 open circuit"
+    },
+    "5205": {
+        "alternatives": [
+            {
+                "action": "Check signal cable.",
+                "reason": "Flow sensor T0/signal cable shorted."
+            }
+        ],
+        "description": "Warning if the resistance of flow sensor T0 < 500 Ohm (>110\u00b0C).",
+        "level": "Installer",
+        "title": "Warning Z1 Flow temperature sensor T0 short circuit"
+    },
+    "5206": {
+        "alternatives": [
+            {
+                "action": "Se possible actions for the warnings 5204 and 5205.",
+                "reason": "See possible causes for the warnings 5204 and 5205."
+            },
+            {
+                "action": "Measure the resistance of the temperature sensor. If the value is out of range the signal cable may have a break or short. Replace signal cable or sensor T0 if necessary.",
+                "reason": "Flow sensor T0 value is out of range (> 30 kOhm or < 500 Ohm)."
+            },
+            {
+                "action": "If sensor T0 measures the correct value, and the same warning (5204/5205) remains when the sensor is connected, replace the installer module.",
+                "reason": "Defective installer module."
+            }
+        ],
+        "description": "Alarm if 3 warnings are registered withing 3 hours, or if the circuit for flow sensor T0 is continuously shorted/broken for 30 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Flow temperature sensor T0 failure"
+    },
+    "5207": {
+        "alternatives": [
+            {
+                "action": "Check screw terminal for TC1.",
+                "reason": "Screw terminal on installer module not properly tightened."
+            },
+            {
+                "action": "With TC1 disconnected from installer module, compare measured Ohm value with sensor table in documentation. Replace sensor if necessary.",
+                "reason": "Heat carrier outlet sensor TC1/signal cable open circuit."
+            },
+            {
+                "action": "Replace installer module.",
+                "reason": "Defective installer module."
+            }
+        ],
+        "description": "Warning if open circuit (>179 kOhm) on sensor TC1 after 3 registered errors within 2 hours.",
+        "level": "Installer",
+        "title": "Warning Temperature sensor TC1 open circuit"
+    },
+    "5208": {
+        "alternatives": [
+            {
+                "action": "With TC1 disconnected from installer module, compare measured Ohm value with sensor table in documentation. Repair sensor cable or replace sensor if necessary.",
+                "reason": "Heat carrier outlet sensor TC1/signal cable shorted."
+            },
+            {
+                "action": "Replace installer module.",
+                "reason": "Defective installer module."
+            }
+        ],
+        "description": "Warning short circuit (<3900 Ohm) on sensor TC1, if 3 registered errors within 2 hours.",
+        "level": "Installer",
+        "title": "Warning Temperature sensor TC1 short circuit"
+    },
+    "5209": {
+        "alternatives": [
+            {
+                "action": "See actions for alarm codes 5207, 5209.",
+                "reason": "Se possible causes for alarm code 5207, 5208."
+            }
+        ],
+        "description": "Alarm after 3 errors within 3 hours, or 15 minutes of continuously broken/shorted cicuit for sensor TC1.",
+        "level": "Customer",
+        "title": "Alarm Temperature sensor TC1 fault"
+    },
+    "5213": {
+        "alternatives": [
+            {
+                "action": "Check screw terminal for TC1.",
+                "reason": "Screw terminal in installer module, for heat carrier return sensor TC1, not properly tightened."
+            },
+            {
+                "action": "With sensor disconnected from the installer board, measure the Ohm value and compare it to table value in documentation. Repair cable or replace sensor if necessary.",
+                "reason": "Heat carrier return sensor TC0/signal cable broken."
+            },
+            {
+                "action": "Replace installer module.",
+                "reason": "Defective installer module."
+            }
+        ],
+        "description": "Warning if the resistance of heat carrier return-sensor TC0 > 30 kOhm (<0\u00b0C).",
+        "level": "Installer",
+        "title": "Warning Z1 Inlet temp. sensor TC0 open circuit"
+    },
+    "5214": {
+        "alternatives": [
+            {
+                "action": "With sensor TC0 disconnected from the installer board, measure the resistance and compare it to sensor table in documentation. Replace sensor if necessary.",
+                "reason": "Heat carrier return sensor TC0/signal cable shorted."
+            },
+            {
+                "action": "Replace installer board.",
+                "reason": "Defective installer board."
+            }
+        ],
+        "description": "Warning if the resistance of heat carrier return-sensor TC0 < 500 Ohm (>110\u00b0C).",
+        "level": "Installer",
+        "title": "Warning Z1 Inlet temp. sensor TC0 short circuit"
+    },
+    "5215": {
+        "alternatives": [
+            {
+                "action": "See possible actions for alarm codes 5213, 5214.",
+                "reason": "See possible causes for alarm codes 5213, 5214."
+            }
+        ],
+        "description": "Alarm if 3 warnings are registered within 3 hours, or if the circuit for sensor TC0 is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Inlet temperature sensor TC0 fault"
+    },
+    "5234": {
+        "alternatives": [
+            {
+                "action": "Measure resistance of sensor TP1/signal cable, and compare value to sensor table in documentation. TP1 needs to disconnected from the I/O modulen during measurement. Repair cable or replace sensor if necessary.",
+                "reason": "Pool temperature sensor TP1/signal cable interruption."
+            },
+            {
+                "action": "Tighten screws.",
+                "reason": "Screw terminal for sensor TP1 is not properly tightened."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning for interruption of the circuit (>179 kOhm) on sensor TP1, after 3 faults within 2 hours.",
+        "level": "Installer",
+        "title": "Warning Pool temp. sensor TP1 open circuit"
+    },
+    "5235": {
+        "alternatives": [
+            {
+                "action": "Measure resistance of sensor TP1/signal cable, and compare value to sensor table in documentation. TP1 needs to disconnected from the I/O modulen during measurement. Repair cable or replace sensor if necessary.",
+                "reason": "Pool temperature sensor TP1/signal cable shorted."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for pool temperature sensor TP1 is shorted. Warning is triggered if three detected faults within 2 hours.",
+        "level": "Installer",
+        "title": "Warning Pool temp. sensor TP1 short circuit"
+    },
+    "5236": {
+        "alternatives": [
+            {
+                "action": "Se trouble-shooting advice for codes 5234, 5235.",
+                "reason": "Se possible causes for codes 5234, 5235."
+            }
+        ],
+        "description": "Alarm if 3 errors within 3 hours, or if circuit for pool temperature sensor TP1 is broken/shorted continuously for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Pooltemperature sensor TP1 fault"
+    },
+    "5237": {
+        "alternatives": [
+            {
+                "action": "Check screw terminal.",
+                "reason": "Screw terminal for TW1 on installer module not properly tightened."
+            },
+            {
+                "action": "With the sensor disconnected from the installer board, meausre and compare the resistance to sensor table in documentation. Repair cable or replace sensor if necessary.",
+                "reason": "Sensor TW1 or signal cable is broken."
+            },
+            {
+                "action": "Replace installer board.",
+                "reason": "Defective installer board."
+            }
+        ],
+        "description": "Warning if the resistance for hot water sensor TW1 > 30 kOhm (<0\u00b0C). [IVT] Warning if the resistance for hot water sensor TW1 > 36 kOhm (<0\u00b0C). [Bosch]",
+        "level": "Installer",
+        "title": "Warning DHW temp. sensor TW1 open circuit"
+    },
+    "5239": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning codes 5237 and 5238.",
+                "reason": "Se possible causes for warning codes 5237 and 5238."
+            }
+        ],
+        "description": "Alarm is triggered if 3 warnings have been registered within 3 hours, or if the circuit for sensor TW1 is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm DHW temp. sens. TW1 fault"
+    },
+    "5246": {
+        "alternatives": [
+            {
+                "action": "De-air heating system according to instruction in the installer guide. Refill heating system.",
+                "reason": "Low system pressure. Air in the heating system."
+            },
+            {
+                "action": "Clean filter ball SC1.",
+                "reason": "Clogged filterball SC1 on return pipe."
+            },
+            {
+                "action": "Check adjustment valves/thermostats for heating system.",
+                "reason": "Bad circulation in the heating carrier/heating system."
+            },
+            {
+                "action": "Replace fuse F1.",
+                "reason": "Fuse F1 is broken."
+            },
+            {
+                "action": "Replace system pressure guard.",
+                "reason": "Defective system pressure guard MC1."
+            },
+            {
+                "action": "Verify breaking temperature (96\u00b0C) for the overheating protector.",
+                "reason": "Defective overheating protector."
+            },
+            {
+                "action": "Disconnect PWM signal from terminal 40,41 on installer module. The speed of the circulation pump should increase to 100%.",
+                "reason": "Defective installer module, PWM signal for the circulation pump missing."
+            },
+            {
+                "action": "Replace fuse F50.",
+                "reason": "Fuse F50 on installer module is broken."
+            },
+            {
+                "action": "Ensure that supply voltage is 230 V on installer module.",
+                "reason": "230 V supply missing on installer module."
+            },
+            {
+                "action": "Replace installer module.",
+                "reason": "Defective installer module."
+            },
+            {
+                "action": "Replace circulation pump.",
+                "reason": "Defective circulation pump."
+            },
+            {
+                "action": "Check / replace contactor.",
+                "reason": "Contactor for electrical heater has got jammed in closed (active) position."
+            }
+        ],
+        "description": "The alarm circuit has two guards connected in series: The overheating protector for the electrical heater is triggered. The pressure guard MC1 for the heating system is triggered due to pressure < 0,5 bar. Either of these two can cause the alarm.",
+        "level": "Customer",
+        "svdescription": "Antingen \u00e4r systemtrycket i v\u00e4rmeanl\u00e4ggningen under 0,5 bar, eller s\u00e5 har \u00f6verhettningsskyddet l\u00f6st ut. Se instruktionsfilmer via l\u00e4nken.",
+        "svheader": "\u00d6verhettningsskydd el. systemtryckvakt har l\u00f6st ut. ",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Alarm Z1 Electr.boost.heater E2 high li. saf. cut-out or press.reg. triggered"
+    },
+    "5252": {
+        "alternatives": [
+            {
+                "action": "Check adjustment valves/thermostats for heating system.",
+                "reason": "Bad circulation in the heating carrier/heating system."
+            }
+        ],
+        "description": "Warning when the heat carrier delta >13K in heating mode, or >7K in cooling mode.",
+        "level": "Installer",
+        "title": "Warning Z1 Restr. in flow rate btw. outdoor and ind. unit (check strainer)"
+    },
+    "5265": {
+        "alternatives": [
+            {
+                "action": "Check CANbus connections on installer board and I/O board.",
+                "reason": "Bad CANbus connections on installer board (indoor unit) or I/O board (outdoor unit)."
+            },
+            {
+                "action": "Replace CANbus cable.",
+                "reason": "Open circuit/break on CANbus cable between indoor and outdoor unit."
+            },
+            {
+                "action": "Change to proper type of cable.",
+                "reason": "Incorrect type of CANbus cable. Read printed documentation for further info."
+            },
+            {
+                "action": "Separate CANbus and power supply by at least 100 mm.",
+                "reason": "CANbus cable is placed together with power supply to heat pump. Interference can be generated by electromagnetic induction."
+            },
+            {
+                "action": "Remove/connect cable shield to/from earth.",
+                "reason": "Incorrect earthing of CANbus cable."
+            }
+        ],
+        "description": "Bad connection or interference on CANbus between heat pump and indoor unit.",
+        "level": "Installer",
+        "title": "Warning Z1 PCB disconnected"
+    },
+    "5266": {
+        "alternatives": [
+            {
+                "action": "See actions for alarm 5265.",
+                "reason": "See possible causes for warning 5265."
+            }
+        ],
+        "description": "Alarm after 3 warnings within 3 hours, or continuous disruption in 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 PCB disconnected"
+    },
+    "5269": {
+        "alternatives": [
+            {
+                "action": "Clear system filter/filter ball SC1.",
+                "reason": "Dirt in filter ball SC1 on return line."
+            },
+            {
+                "action": "Check adjustment valves/thermostats for heating system. Ensure adequate flow.",
+                "reason": "Poor circulation in heat transfer system/heating system."
+            },
+            {
+                "action": "With TC1 disconnected from the installer module, compare its measured value to sensor table in documentation. Replace sensor TC1 if necessary.",
+                "reason": "Defective TC1 sensor."
+            }
+        ],
+        "description": "Alarm when sensor TC1>87\u00b0C. The alarm is automatically acknowledged/reset when TC1<80\u00b0C.",
+        "level": "Customer",
+        "svdescription": "Fl\u00f6desproblem. Vanligaste orsaken \u00e4r luft i v\u00e4rmesystemet, igensatt partikelfilter eller att termostaterna p\u00e5 v\u00e4rmesystemet \u00e4r nerstrypta s\u00e5 att fl\u00f6det blir f\u00f6r l\u00e5gt. Reng\u00f6r partikelfiltret och lufta v\u00e4rmesystemet. Se instruktionsfilmer knappen h\u00e4r bredvid.",
+        "svheader": "Eltillskott  F\u00f6r h\u00f6g temperatur . ",
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "title": "Alarm Z1 Additional electric heater EE too high temperature"
+    },
+    "5271": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from the installer board, compare sensor resistans to table values for T0 found in the documentation.",
+                "reason": "Defective T0 sensor."
+            },
+            {
+                "action": "Clean filter ball on return pipe. Check adjustment valves and thermostats for the heating system.",
+                "reason": "Low flow in heating system."
+            },
+            {
+                "action": "Check that 230 V is available on terminal 53 (VW1) during DHW mode. If 230 V during DHW mode, replace the motor/cable for the diverter valve. If voltage is missing during DHW mode, replace the installer module.",
+                "reason": "The system is in heating mode but the diverter valve has not switched over to DHW."
+            }
+        ],
+        "description": "Alarm when sensor T0 > \"Max. flow temperature\" set point value + 5 degrees, for 10 seconds. The alarm is blocked for 5 minutes after a DHW cycle.",
+        "level": "Customer",
+        "svdescription": "Fl\u00f6desproblem. Vanligaste orsaken \u00e4r luft i v\u00e4rmesystemet, igensatt partikelfilter eller att termostaterna p\u00e5 v\u00e4rmesystemet \u00e4r nerstrypta s\u00e5 att fl\u00f6det blir f\u00f6r l\u00e5gt. Reng\u00f6r partikelfiltret och lufta v\u00e4rmesystemet. Se instruktionsfilmer knappen h\u00e4r bredvid.",
+        "svheader": "Larm v\u00e4rmekrets 1 H\u00f6g framledn.temp. ",
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "title": "Alarm Heating circuit 1 high flow temperature"
+    },
+    "5272": {
+        "alternatives": [
+            {
+                "action": "Se actions for alarm 5246.",
+                "reason": "See possible causes for alarm 5246."
+            },
+            {
+                "action": "Replace/reset fuses at distribution box.",
+                "reason": "Tripped fuse at distrubution box."
+            }
+        ],
+        "description": "Alarm for external additional heater/overheating protector. Alarm is triggered if 230 V is detected on terminal 64 on installer module.",
+        "level": "Customer",
+        "title": "Alarm External heater EM is not operational"
+    },
+    "5273": {
+        "alternatives": [
+            {
+                "action": "Reset fuse in indoor unit.",
+                "reason": "Tripped fuse in indoor unit (tower)."
+            },
+            {
+                "action": "Check that all phases are properly connected and that each one carries voltage.",
+                "reason": "Phase/phases missing on terminals for supply voltage in heat pump."
+            },
+            {
+                "action": "Check that all phases are available on terminals for EMI filter.",
+                "reason": "Phase/phases missing on terminals for supply voltage on EMI filter in the inverter."
+            },
+            {
+                "action": "Replace inverter.",
+                "reason": "If voltage is present on all phases connected to the EMI filter, and alarm remains, the inverter is broken."
+            }
+        ],
+        "description": "Alarm if phase is missing. Only applicable for 3-phase models. 1-phase: If L1 is missing the indoor unit shuts down. If L3 is missing the heat pump shuts down.",
+        "level": "Customer",
+        "title": "Alarm Z1 Phase monitoring"
+    },
+    "5275": {
+        "alternatives": [
+            {
+                "action": "Check connection/cable on terminal X2, and electrical anode rod in cylinder.",
+                "reason": "LED on electrical anode board is lit red."
+            },
+            {
+                "action": "If LED is lit green, check that voltage exceeds 1 V DC on terminal 45, 46 on installer module.",
+                "reason": "Check that the LED is lit green on the electrical anode board."
+            },
+            {
+                "action": "Replace installer module.",
+                "reason": "If voltage > 1V DC on terminal 45,46, the installer module is defective."
+            },
+            {
+                "action": "Ensure that 230V is available on terminal X1 on electrical anode board.",
+                "reason": "Green LED on electrical anode board is not turned on."
+            },
+            {
+                "action": "Replace electrical anode board.",
+                "reason": "If 230 V is available on terminal X1If green LED on electrical anode board is turned off, the board is broken."
+            }
+        ],
+        "description": "Alarm if voltage > 1 V DC on terminal 45, 46 on installer module, for longer than 6 hours.",
+        "level": "Customer",
+        "title": "Alarm Electric anode is out of order"
+    },
+    "5276": {
+        "alternatives": [
+            {
+                "action": "Check the pressure of cold carrier.",
+                "reason": "Pressure is below chosen limit."
+            }
+        ],
+        "description": "Alarm if the circuit for pressure guard, external input I1-I2-I3-I4, is broken.",
+        "level": "Customer",
+        "title": "Alarm Z1 Pressure in brine circuit too low"
+    },
+    "5284": {
+        "alternatives": [
+            {
+                "action": "Stop such continuous usage or change (prolong) the time for thermal disinfection.",
+                "reason": "Water is continuously tapped from the cylinder."
+            },
+            {
+                "action": "If the fuse requires the heater to run at limited power, you may need to allow a longer time for thermal disinfection. The time can be adjusted under [Service menu >> DHW >> Max. time].",
+                "reason": "The electrical heaters output power is set too low in relation to hot water volume."
+            },
+            {
+                "action": "Put the hot water sensor in the correct position.",
+                "reason": "Hot water sensor is misplaced, or have come loose from the cylinder."
+            },
+            {
+                "action": "De-air the heating coil.",
+                "reason": "Air in the heating coil."
+            },
+            {
+                "action": "Make sure that circulation pipes are properly insulated.",
+                "reason": "If using hot water circulation, too big losses from the pipes."
+            },
+            {
+                "action": "With sensor disconnected from the installer module, measure its resistance and compare it to table value in documentation. Replace if necessary.",
+                "reason": "Incorrect reading from temperature sensor TW1."
+            },
+            {
+                "action": "Fix any pipe connection issues.",
+                "reason": "Incorrectly connected pipes to hot water system."
+            }
+        ],
+        "description": "The domestic hot water temperature, sensor TW1, has not reached 65\u00b0C within 180 minutes.",
+        "level": "Installer",
+        "svdescription": "Legionellaspetsen n\u00e5r inte upp till 65 grader under de tre timmar den har p\u00e5 sig. Nytt f\u00f6rs\u00f6k kommer ske f\u00f6ljande natt. ",
+        "svheader": "Varning Senaste term.desinfektion kunde ej genomf\u00f6ras. ",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Warning Last thermal disinfection failed"
+    },
+    "5285": {
+        "alternatives": [
+            {
+                "action": "Check the different sensors and compare Ohmvalues to table values in documentation. Replace sensor if sensor if necessary.",
+                "reason": "Defective sensor."
+            },
+            {
+                "action": "Check that 230V is available on terminal PC0 (51, N) on the installation module. If not, also check that the fuse on the installation module is OK.",
+                "reason": "Supply voltage (230 V) is missing for circulation pump PC0."
+            },
+            {
+                "action": "Disconnect PWM signal from terminal 40,41 on the installation module. The speed of the circulation pump shall increase to max. If this does not happen, replace the circulation pump.",
+                "reason": "PWM signal for circulation pump PC0 is missing."
+            },
+            {
+                "action": "Replace installation module.",
+                "reason": "Defective installation module (does not provide 230V for PC0 despite the fuse beeing OK, or that the PWM-signal is not working)."
+            }
+        ],
+        "description": "Varning om T0 (framledning), TC3 (v\u00e4rmeb\u00e4rare ut) eller TC0 (v\u00e4rmeb\u00e4rare retur) < 5\u00b0C i 10 minuter. N\u00e4r varningen triggas startar tillg\u00e4ngliga v\u00e4rmek\u00e4llor och alla shuntventiler \u00f6ppnar f\u00f6r att v\u00e4rma systemet. \u00c5terst\u00e4llning sker n\u00e4r ovan n\u00e4mnda givare > 25\u00b0C.",
+        "level": "Installer",
+        "title": "Warning Risk of frost in heat. sys."
+    },
+    "5298": {
+        "alternatives": [
+            {
+                "action": "Clean the filter.",
+                "reason": "Dirt in system filter/filterball valve SC1."
+            },
+            {
+                "action": "Ensure sufficient flow.",
+                "reason": "Poor circulation in heat transfer system/heating system."
+            },
+            {
+                "action": "Vent the heating system in accordance with instructions in installation manual. Fill up with water.",
+                "reason": "Air in heat transfer system/heating system."
+            },
+            {
+                "action": "With sensors disconnected from installer module, measure the resistance of the sensors. Read out values from sensor table in documentation and compare them to actual temperatures. Replace any defective sensor.",
+                "reason": "Defective sensor TC3, TC0 or T0."
+            },
+            {
+                "action": "Check VW1 position. A=hot water, B=heating system.",
+                "reason": "Diverter valve VW1 does not shift from hot water production to heating."
+            },
+            {
+                "action": "Check that terminal 53 on installer module provides 230V in hot water mode only.",
+                "reason": "Defective installer module, bad control signal for diverter valve."
+            },
+            {
+                "action": "Disconnect the PWM signal from terminal 40, 41 on the installer module. The speed of the pump should increase to 100%. If not, replace the circulation pump.",
+                "reason": "Defective installer module, PWM signal missing for circulation pump PC0."
+            },
+            {
+                "action": "Measure voltage on terminal 51-N. If no voltage, replace installer module.",
+                "reason": "Defective installer module, supply voltage, 230 V, missing from circulation pump PC0."
+            }
+        ],
+        "description": "Warning if JR1 > 67\u00b0C (Pe=44 bar).",
+        "level": "Installer",
+        "title": "Warning Z1 High pressure alarm JR1"
+    },
+    "5299": {
+        "alternatives": [
+            {
+                "action": "Se actions for warning 5298.",
+                "reason": "See possible causes for warning 5298."
+            }
+        ],
+        "description": "Alarm if JR1 > 67\u00b0C (Pe=44 bar) 3 times within 2 hours.",
+        "level": "Customer",
+        "svdescription": "Fl\u00f6desproblem. Vanligaste orsaken \u00e4r luft i v\u00e4rmesystemet, igensatt partikelfilter eller att termostaterna p\u00e5 v\u00e4rmesystemet \u00e4r nerstrypta s\u00e5 att fl\u00f6det blir f\u00f6r l\u00e5gt. Se instruktionsfilmer via l\u00e4nken.",
+        "svheader": "H\u00f6gtryckslarm.",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Alarm Z1 High pressure alarm JR1"
+    },
+    "5302": {
+        "alternatives": [
+            {
+                "action": "Check screw mountings for cooling coil.",
+                "reason": "Poor heat transfer to cooling coil."
+            }
+        ],
+        "description": "Internal high temperature protection in inverter. Warning is triggered if temperature exceeds 80\u00b0C.",
+        "level": "Installer",
+        "title": "Warning Z1 Too high temperature on compressor driver"
+    },
+    "5310": {
+        "alternatives": [
+            {
+                "action": "Compare read value from sensor TR5 with value of external thermometer. Connect manometer to refrigerant circuit and measure low pressure. Compare evaporating tempeature value to read value from JR0.",
+                "reason": "Suction gas overheating too high. The suction gas overheating is calculated through TR5 - JR0, and controls the position of the electronic expansion valve. Therefore correct readings from these sensors are important."
+            },
+            {
+                "action": "Use magnet to manuall change position of the EEV during operation. This to ensure that the valve has not seized.",
+                "reason": "If neither JR0 or TR5 are bad, a possible cause could be that the electronic expansion valve is not regulating properly."
+            }
+        ],
+        "description": "Warning if hot gas temperature TR6 > maximum temperature (90 or 115\u00b0C) for more than 60 seconds.",
+        "level": "Installer",
+        "title": "Warning Z1 Too high discharge gas temperature"
+    },
+    "5311": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning 5310.",
+                "reason": "See possible causes for warning 5310."
+            }
+        ],
+        "description": "Alarm after 3 warnings within 3 hours (TR6 > 90 or 115\u00b0C), or if warning is continuously active for more than 30 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Too high discharge gas temperature"
+    },
+    "5314": {
+        "alternatives": [
+            {
+                "action": "Check resistance of sensor TR6 and signal cable and compare to table value in documentation. Measurement is done with sensor disconnected from I/O-module. Replace sensor if necessary.",
+                "reason": "Broken circuit for discharge gas temperature sensor TR6."
+            },
+            {
+                "action": "If signal cable is intact and the resistance of sensor TR6 is correct in relation to temperature, replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Broken circuit (> 364 kOhm) for sensor TR6.",
+        "level": "Installer",
+        "title": "Warning Z1 Disch. gas temp. sensor TR6 open circuit"
+    },
+    "5315": {
+        "alternatives": [
+            {
+                "action": "Check resistance of sensor TR6 and signal cable and compare to table value in documentation. Measurement is done with sensor disconnected from I/O module. Repair cable or replace sensor if necessary.",
+                "reason": "Discharge gas temperature sensor TR6 or signal cable is shorted."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Shorted circuit (< 350 kOhm) for sensor TR6, for more than 1 minute.",
+        "level": "Installer",
+        "title": "Warning Z1 Disch. gas temp. sensor TR6 short circuit"
+    },
+    "5316": {
+        "alternatives": [
+            {
+                "action": "See actions for warning codes 5314, 5315.",
+                "reason": "Se possible causes for warning codes 5314, 5315."
+            }
+        ],
+        "description": "Alarm if any of the warnings 5314 or 5315 has been triggered 3 times within 2 hours, or if any of the warnings have been active for more than 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Discharge gas temp. sensor TR6 fault"
+    },
+    "5320": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from I/O module, measure resistance of sensor/signal cable and compare to table values in documentation.",
+                "reason": "Broken sensor TC3/signal cable."
+            },
+            {
+                "action": "Check connector.",
+                "reason": "Connector not properly seated in I/O module."
+            },
+            {
+                "action": "Replace sensor TC3.",
+                "reason": "Broken sensor TC3/signal cable."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Broken circuit (> 390 kOhm) for sensor TC3 (heat carrier out).",
+        "level": "Installer",
+        "title": "Warning Temperature sensor TC3 open circuit"
+    },
+    "5321": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from I/O module, measure the resistance of sensor and signal cable. Compare to table values in documentation. Repair signal cable or replace sensor.",
+                "reason": "Sensor TC3/signal cable is shorted."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Shorted circuit (< 350 kOhm) for sensor TC3 (heat carrier out).",
+        "level": "Installer",
+        "title": "Warning Temperature sensor TC3 short circuit"
+    },
+    "5322": {
+        "alternatives": [
+            {
+                "action": "See actions for warning codes 5320, 5321.",
+                "reason": "See possible causes for warning codes 5320, 5321."
+            }
+        ],
+        "description": "Alarm if any of the warning codes 5320 and 5321 are registered 3 times within 3 hours, or if TC3 circuit is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Temperature sensor TC3 fault"
+    },
+    "5330": {
+        "alternatives": [
+            {
+                "action": "Check 230/400 V connections in both indoor and outdoor unit.",
+                "reason": "Supply voltage missing in outdoor unit."
+            },
+            {
+                "action": "Check MODbus cable/connection terminals between I/O module and inverter.",
+                "reason": "Interference on MODbus."
+            },
+            {
+                "action": "Check connections and cable routing. A 100 mm gap between supply voltage cables and CANbus cables are needed to avoid interference.",
+                "reason": "Incorrect CANbus connection between indoor and outdoor unit."
+            }
+        ],
+        "description": "Warning if more than 20% of data sent to the inverter returns with errors (bad reply or no reply).",
+        "level": "Installer",
+        "title": "Warning Z1 Communication fault to compressor driver"
+    },
+    "5331": {
+        "alternatives": [
+            {
+                "action": "Check 230V/400V connections in IDU and ODU.",
+                "reason": "Supply voltage missing in outdoor unit."
+            },
+            {
+                "action": "Compare P-selection with settinf defined in manual. The following information is correct. P=4: HP 13 kW 3N~ P=6: HP 13 kW 1N~",
+                "reason": "Incorrect program selection (P-selector on I/O-module (outdoor unit). The meaning of P=4 and P=6 have become mixed up i some manuals."
+            },
+            {
+                "action": "Check MODbus cable/connection terminals between I/O module and inverter.",
+                "reason": "Interference on MODbus."
+            },
+            {
+                "action": "Check cabling and routing. CANbus should be separated from supply voltage cables by at least 100 mm, to avoid interference.",
+                "reason": "Improper routing of CANbus cable between indoor and outdoor unit."
+            },
+            {
+                "action": "Check that 12V DC is available on MODbus terminal (31, 34) on I/O module. If 12V DC missing, replace I/O module.",
+                "reason": "Defective I/O module."
+            },
+            {
+                "action": "Replace inverter.",
+                "reason": "Defective inverter."
+            }
+        ],
+        "description": "Alarm if comunication is missing, or more than 30% of data sent to inverter returns with errors (incorrect reply or no reply at all).",
+        "level": "Customer",
+        "title": "Alarm Z1 Communication fault to compressor control system"
+    },
+    "5347": {
+        "alternatives": [
+            {
+                "action": "Check supply voltage.",
+                "reason": "Bad connection in mains voltage to either indoor or outdoor unit."
+            },
+            {
+                "action": "If repeated warnings, contact the electricity supplier.",
+                "reason": "Low incoming mains voltage to indoor our outdoor unit."
+            },
+            {
+                "action": "If repeated warnings, contact the electricity supplier.",
+                "reason": "Low incoming mains voltage to installer module."
+            }
+        ],
+        "description": "Warning if incoming AC voltage to inverter < 165 V during 10 s, or if voltage < 180 V during 0.5 s. Warning is automatically reset after 2 minutes if incoming AC voltage > 190 V.",
+        "level": "Installer",
+        "svdescription": "L\u00e5g n\u00e4tsp\u00e4nning. Detta larm hinner \u00e4ven registreras vid ett str\u00f6mavbrott och visas n\u00e4r v\u00e4rmepumpen sp\u00e4nningss\u00e4tts igen. ",
+        "svheader": "Varning. F\u00f6r l\u00e5g sp\u00e4nning i str\u00f6mf\u00f6rs\u00f6rjning .",
+        "svheatpump": "IVT AirX Luft/vattenv\u00e4rmepump",
+        "title": "Warning Z1 Undervoltage at power supply"
+    },
+    "5350": {
+        "alternatives": [
+            {
+                "action": "Check cabling/connections between inverter and compressor.",
+                "reason": "Bad cabling conncetion between inverter and compressor."
+            },
+            {
+                "action": "Bad reading from compressor sensor TR1.",
+                "reason": "Oil/liquid in compressor during start attempt."
+            },
+            {
+                "action": "Compare value of TR1 with value measured by external thermometer.",
+                "reason": "Bad temperature reading from compressor sensor TR1."
+            },
+            {
+                "action": "Check that the A- and P-selectors (rotary encoders) are set according to the wiring diagram. It's a good idea to double-check these settings if the I/O module has previously been replaced.",
+                "reason": "Improper setting of rotary encoders on the I/O module."
+            }
+        ],
+        "description": "Warning compressor motor (synchronous motor) not synchronous after 5 failed start attempts.",
+        "level": "Installer",
+        "title": "Warning Z1 Driving failure on compressor"
+    },
+    "5351": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5350.",
+                "reason": "Se possible causes for warning code 5350."
+            }
+        ],
+        "description": "Alarm if 3 warnings are registered within 3 hours, or if the warning is active for 30 minutes. The alarm is automatically reset after 4 minutes if the condition is no longer fulfilled.",
+        "level": "Customer",
+        "title": "Alarm Z1 Driving failure on compressor"
+    },
+    "5354": {
+        "alternatives": [
+            {
+                "action": "Check cabling between inverter and compressor.",
+                "reason": "Broken/shorted cabling between the inverter and compressor."
+            }
+        ],
+        "description": "Warning if the inverter registeres an overcurrent >42 A DC to compressor, for more than 20 microseconds. Warning is automatically reset after 4 minutes if the condition is not fulfilled.",
+        "level": "Installer",
+        "title": "Warning Z1 Overcurrent on the compressor"
+    },
+    "5355": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5354.",
+                "reason": "See possible causes for warning code 5354."
+            },
+            {
+                "action": "Replace inverter.",
+                "reason": "Defective inverter."
+            },
+            {
+                "action": "Measure the resistance between windings and earth. If resistance < 10 kOhm, replace the compressor.",
+                "reason": "Electrical fault in compressor."
+            }
+        ],
+        "description": "Alarm after if 3 warnings are registered within 3 hours, or if the warning is active for 30 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Overcurrent on the compressor"
+    },
+    "5362": {
+        "alternatives": [
+            {
+                "action": "Check main fuses with regard to poor contact.",
+                "reason": "Too high incoming voltage to heat pump."
+            },
+            {
+                "action": "If repeated warnings, contact the electricity supplier.",
+                "reason": "Too high incoming mains voltage."
+            }
+        ],
+        "description": "Info if supply voltage to heat pump >400 V for more than 30 seconds. Automatically reset after 4 minutes if voltage drops below 380 V.",
+        "level": "Customer",
+        "title": "Info Z1 overvoltage"
+    },
+    "5366": {
+        "alternatives": [
+            {
+                "action": "Check motor.",
+                "reason": "Motor not correctly mounted on electronc expansion valve."
+            },
+            {
+                "action": "Activate test outdoor unit.",
+                "reason": "Check that the electronic expansion valves open/close in the correct order."
+            },
+            {
+                "action": "Measure the resistance between the gray cable and orange, red, yellow and black cables. 46 kOhm = OK. If broken or shorted circuit, replace motor.",
+                "reason": "Defective expansion valve motor."
+            },
+            {
+                "action": "If repeated warnings, replace the expansion valve.",
+                "reason": "Expansion valve VR1 opens too much/gets stuck in open position."
+            }
+        ],
+        "description": "Warning if suction gas overheating < 2 degreees and the discharge gas overheating < 20 degrees.",
+        "level": "Installer",
+        "svdescription": "Fl\u00f6desproblem p\u00e5 v\u00e4rmesystemet. Kontrollera s\u00e5 att alla termostater \u00e4r \u00f6ppna till v\u00e4rmesystemet. Lufta v\u00e4rmesystemet. Se instruktionsfilmer knappen nedan. Om inte detta hj\u00e4lper kontakta er installat\u00f6r.",
+        "svheader": "Larm v\u00e4rmepump  l\u00e5g \u00f6verhettning. ",
+        "svheatpump": "IVT Geo 312/412 Bergv\u00e4rmepump",
+        "title": "Warning Z1 Low superheat of refrigerant"
+    },
+    "5367": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5366.",
+                "reason": "See possible causes for warning code 5366."
+            }
+        ],
+        "description": "Alarm if 3 warnings are registered within 3 hours, or if the warning is active for 30 minutes.",
+        "level": "Customer",
+        "svdescription": "Fl\u00f6desproblem p\u00e5 v\u00e4rmesystemet. Kontrollera s\u00e5 att alla termostater \u00e4r \u00f6ppna till v\u00e4rmesystemet. Lufta v\u00e4rmesystemet. Se instruktionsfilmer knappen h\u00e4r bredvid. Om inte detta hj\u00e4lper kontakta er installat\u00f6r.",
+        "svheader": "Larm v\u00e4rmepump l\u00e5g \u00f6verhettning. ",
+        "svheatpump": "IVT Geo 312/412 Bergv\u00e4rmepump",
+        "title": "Alarm Z1 Superheat of refrigerant too low"
+    },
+    "5374": {
+        "alternatives": [
+            {
+                "action": "Check adjustment valves/radiator thermostats.",
+                "reason": "Insuffient or no circulation in heat transfer system/heating system."
+            },
+            {
+                "action": "Clean the filter.",
+                "reason": "Dirt in system filter/filterball valve SC1."
+            },
+            {
+                "action": "De-air the heating system in accordance with instructions in installation manual. Fill up with water.",
+                "reason": "Air in heat transfer system/heating system."
+            },
+            {
+                "action": "Compare sensor reading in display to actual temperature. Replace sensor if necessary.",
+                "reason": "Defective TC3 sensor (heat carrier out)."
+            },
+            {
+                "action": "Disconnect PWM signal from terminal 36,37 on I/O module. The speed of the the circulation pump should increase to 100%.",
+                "reason": "Defective installer module, PWM-signal for circulation pump PC0 missing."
+            },
+            {
+                "action": "Check that 230 V is available on terminal 51,N on installer module.",
+                "reason": "Defective I/O module, 230 V supply missing for circulation pump."
+            },
+            {
+                "action": "Replace installer module.",
+                "reason": "Defective installer module."
+            },
+            {
+                "action": "Replace circulation pump.",
+                "reason": "Defective circulation pump."
+            }
+        ],
+        "description": "Warning if TC3 < 5\u00b0C. Warning is automatically reset when TC3 and TC1 > 7\u00b0C.",
+        "level": "Installer",
+        "title": "Warning Z1 Risk of frost in condenser"
+    },
+    "5375": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5374.",
+                "reason": "See possible causes for warning code 5374."
+            }
+        ],
+        "description": "Alarm if 3 warnings are registered within 3 hours, or if the warning is active for 30 minutes.",
+        "level": "Customer",
+        "svdescription": "Vanligaste orsaken \u00e4r d\u00e5lig cirkulation mot v\u00e4rmepumpen. Reng\u00f6r partikelfilter. \u00d6ppna termostater till v\u00e4rmesystemet.\nSe instruktionsfilmer knappen nedan.\n",
+        "svheader": "Frysskydd av kondensor. ",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Alarm Z1 Risk of frost in condenser"
+    },
+    "5387": {
+        "alternatives": [
+            {
+                "action": "Check screw mountings for cooling coil.",
+                "reason": "Poor heat transfer to cooling coil."
+            },
+            {
+                "action": "Replace inverter.",
+                "reason": "If repeated alarms, the inverter is likely defective."
+            }
+        ],
+        "description": "Warning if internal temperature sensor in the inverter's PFC module > 80\u00b0C for 10 seconds.",
+        "level": "Customer",
+        "title": "Alarm Z1 PFC compressor driver overheat"
+    },
+    "5394": {
+        "alternatives": [
+            {
+                "action": "Check cabling between inverter and compressor.",
+                "reason": "Break/interruption or short-circuit in cabling between inverter and compressor."
+            }
+        ],
+        "description": "Warning if inverter registers over-current > 42 A DC to compressor, for more than 20 microseconds. Warning is automatically reset after 4 minutes if condition is no longer fulfilled.",
+        "level": "Installer",
+        "title": "Warning Z1 Internal compressor driver fault 1"
+    },
+    "5395": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5394.",
+                "reason": "See possible causes for warning code 5394."
+            },
+            {
+                "action": "Compare P-selection with setting defined in manual. The following information is correct. P=4: HP 13 kW 3N~ P=6: HP 13 kW 1N~",
+                "reason": "Incorrect setting on rotary encoder/selector P on the heat pump's I/O module. The meaning of P=4 and P=6 has been accidently swapped in some manuals."
+            },
+            {
+                "action": "Measure the resistance between the compressor windings and earth. If resistance < 10 kOhm, replace the compressor.",
+                "reason": "Electrical fault in compressor."
+            },
+            {
+                "action": "Replace inverter.",
+                "reason": "Defective inverter."
+            }
+        ],
+        "description": "Alarm if 3 warnings (code 5394) are registered within 3 hours, or if the warning is continuously active for 30 minutes.",
+        "level": "Customer",
+        "svdescription": " Beror oftast p\u00e5 glappkontakt i CanBus eller ModBus-kablaget, alternativt fel i inverter eller kompressor. Tillkalla inatallat\u00f6ren.",
+        "svheader": "Internt kompressordriverfel.",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Alarm Z1 Internal compressor driver fault 1"
+    },
+    "5414": {
+        "alternatives": [
+            {
+                "action": "Check screw terminal.",
+                "reason": "Screw terminal on I/O-module for sensor TR3 has not been tightened properly."
+            },
+            {
+                "action": "With sensor disconnected from I/O module, measure resistance of sensor and compare it to table values in documentation. If broken, replace sensor.",
+                "reason": "Sensor TR3/signal cable is broken."
+            },
+            {
+                "action": "If the sensor measures correctly but the same warning code persists, replace the I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TR3 is broken (> 179 kOhm).",
+        "level": "Installer",
+        "title": "Warning Z1 Condensate sensor heating mode TR3 open circuit"
+    },
+    "5416": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning codes 5414, 5415.",
+                "reason": "See possible causes for warning codes 5414, 5415."
+            }
+        ],
+        "description": "Alarm if any of the warning codes 5414 or 5415 are registrered 3 times within 2 hours, or if sensor TR3 is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Condensate sensor heating mode TR3 fault"
+    },
+    "5420": {
+        "alternatives": [
+            {
+                "action": "Check screw terminal of I/O module.",
+                "reason": "Screw terminal on I/O module, for sensor TR4, is not properly tightened."
+            },
+            {
+                "action": "With sensor disconnected from I/O module, measure its reistance. If broken, replace sensor.",
+                "reason": "Broken sensor TR4/signal cable."
+            },
+            {
+                "action": "If the sensor measures correctly but the same warning code persists, replace the I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TR4 is broken (> 170 kOhm).",
+        "level": "Installer",
+        "title": "Warning Z1 Condensate sensor cooling mode TR4 open circuit"
+    },
+    "5421": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from I/O module, measure its reistance. If shorted, replace sensor.",
+                "reason": "Sensor TR4/signal cable broken."
+            },
+            {
+                "action": "If the sensor measures correctly but the same warning code persists, replace the I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TR4 is shorted.",
+        "level": "Installer",
+        "title": "Warning Z1 Condensate sensor cooling mode TR4 short circuit"
+    },
+    "5422": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning codes 5420, 5421.",
+                "reason": "See possible causes for warning codes 5420, 5421."
+            }
+        ],
+        "description": "Alarm is triggered if any of the warning codes 5420, 5421, are registered 3 times within 2 hours, or if circuit for sensor TR4 is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Condensate sensor cooling mode TR4 fault"
+    },
+    "5426": {
+        "alternatives": [
+            {
+                "action": "Check screw terminal on I/O module.",
+                "reason": "Screw terminal on I/O module, for sensor TR5, not properly tightened."
+            },
+            {
+                "action": "With sensor disconnected from I/O module, measure its reistance. If broken, replace sensor.",
+                "reason": "Sensor TR5/signal cable broken."
+            },
+            {
+                "action": "If the sensor measures correctly but the same warning code persists, replace the I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TR5 is broken (> 179 kOhm).",
+        "level": "Installer",
+        "title": "Warning Z1 Suction gas temperature sensor TR5 open circuit"
+    },
+    "5427": {
+        "alternatives": [
+            {
+                "action": "With the sensor disconnected from I/O module, measure its resistance. If shorted, replace sensor.",
+                "reason": "Sensor TR5/signal cable shorted."
+            },
+            {
+                "action": "If the sensor measures correctly but the same warning code persists, replace the I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TR5 is shorted (< 390 Ohm).",
+        "level": "Installer",
+        "title": "Warning Z1 Suction gas temperature sensor TR5 short circuit"
+    },
+    "5428": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning codes 5426, 5427.",
+                "reason": "See possible causes for warning codes 5426, 5427."
+            }
+        ],
+        "description": "Alarm if any of the warning codes 5426, 5427 are registered 3 times within 2 hours, or if circuit for sensor TR5 is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Suction gas temperature sensor TR5 fault"
+    },
+    "5432": {
+        "alternatives": [
+            {
+                "action": "Check cabling and terminal connections 17, 19 on I/O module.",
+                "reason": "Poor connection in cabling/terminal 17,19 on I/O module."
+            },
+            {
+                "action": "Check that 5V DC is available between terminal 19 and 17, when the pressure sensor is disconnected. If voltage is missing, the I/O module is defective and needs to be replaced.",
+                "reason": "Defective I/O module."
+            },
+            {
+                "action": "If voltage between terminal 19 and 17 is 5 V DC, the pressure sensor is likely broken. Replace pressure sensor",
+                "reason": "Pressure sensor JR0 is defective."
+            }
+        ],
+        "description": "Warning if voltage < 0,5 V DC on terminal 17 on I/O module.",
+        "level": "Installer",
+        "title": "Warning Z1 Low pressure sensor JR0 open circuit"
+    },
+    "5434": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5432.",
+                "reason": "See possible causes for warning code 5432."
+            }
+        ],
+        "description": "Alarm if warning 5432 is registered 3 times within 15 minutes, or if the circuit is continuosly broken for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Low pressure sensor JR0 fault"
+    },
+    "5438": {
+        "alternatives": [
+            {
+                "action": "Check cabling and terminal connections 16, 18 on I/O module.",
+                "reason": "Poor connection in cabling/terminal 16,18 on I/O module."
+            },
+            {
+                "action": "Check that 5V DC is available between terminal 18 and 16, when the pressure sensor is disconnected. If voltage is missing, the I/O module is defective and needs to be replaced.",
+                "reason": "Defective I/O module."
+            },
+            {
+                "action": "If voltage between terminal 18 and 16 is 5 V DC, the pressure sensor is likely broken. Replace pressure sensor.",
+                "reason": "Pressure sensor JR1 is defective."
+            }
+        ],
+        "description": "Warning if voltage < 0,5 V DC on terminal 16 on I/O module.",
+        "level": "Installer",
+        "svdescription": "Larm v\u00e4rmepump Z1 tryckgivare h\u00f6gtryck JR1 trasig. Kontakta er installat\u00f6r.",
+        "svheader": "Larm v\u00e4rmepump tryckgivare h\u00f6gtryck JR1 trasig",
+        "svheatpump": "IVT Geo 312/412 Bergv\u00e4rmepump",
+        "title": "Warning Z1 High pressure sensor JR1 open circuit"
+    },
+    "5440": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5438.",
+                "reason": "See possible causes for warning code 5438."
+            }
+        ],
+        "description": "Alarm if warning 5438 is registered 3 times within 2 hours, or if circuit for pressure sensor JR1 is continuously broken for 15 minutes.",
+        "level": "Customer",
+        "svdescription": "Larm v\u00e4rmepump Z1 tryckgivare h\u00f6gtryck JR1 trasig. Kontakta er installat\u00f6r.",
+        "svheader": "Larm v\u00e4rmepump tryckgivare h\u00f6gtryck JR1 trasig",
+        "svheatpump": "IVT Geo 312/412 Bergv\u00e4rmepump",
+        "title": "Alarm Z1 High pressure sensor JR1 fault"
+    },
+    "5446": {
+        "alternatives": [
+            {
+                "action": "Install hoses on the right connections.",
+                "reason": "Hoses for flow and return between the heat pump and indoor unit have been mixed up."
+            },
+            {
+                "action": "Check placement of sensors. Compare displayed temperatures for TC3 and TC0 with an external thermometer on these positions. Replace sensor(s) if deviations are found.",
+                "reason": "Defective sensor TC3 or TC0."
+            }
+        ],
+        "description": "Alarm if (TC3 \u2013 1) < TC0, and JR1 > (TC3 + 7), for more than 30 seconds. (Where TC3 is heat carrier flow, TC0 is heat carrier return, JR1 is high pressure sensor (condensation temperature.)",
+        "level": "Installer",
+        "title": "Alarm Z1 Flow and return between indoor and outdoor unit mixed up"
+    },
+    "5448": {
+        "alternatives": [
+            {
+                "action": "Check refrigerant filling. Note! Activate the function \u201devacuation/fill\u201d function when evacuating or filling refrigerant.",
+                "reason": "Too little refrigerant in heat pump."
+            },
+            {
+                "action": "Check/repair leak.",
+                "reason": "Possible leak in refrigerant circuit."
+            }
+        ],
+        "description": "Alarm after 20 minutes if the electronic expansion valve VR0 has opened 20% more than calculated value.",
+        "level": "Installer",
+        "title": "Alarm Z1 Lack of refrigerant"
+    },
+    "5451": {
+        "alternatives": [
+            {
+                "action": "Open thermostats in the heating system.",
+                "reason": "Insufficient circulation"
+            },
+            {
+                "action": "Clean the particle filter in the heating system.",
+                "reason": "Clogged particle filter"
+            }
+        ],
+        "description": "Usually due to insufficient circulation in the heat pump",
+        "level": "Customer",
+        "svdescription": "Vanligaste orsaken \u00e4r d\u00e5lig cirkulation mot v\u00e4rmepumpen. Reng\u00f6r partikelfilter. \u00d6ppna termostater till v\u00e4rmesystemet.\nSe instruktionsfilmer via l\u00e4nken.\n",
+        "svheader": "F\u00f6r l\u00e5gt fl\u00f6de under avfrostning",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Warning: Insufficient flow during de-icing"
+    },
+    "5452": {
+        "alternatives": [
+            {
+                "action": "Replace inverter.",
+                "reason": "Defective inverter."
+            }
+        ],
+        "description": "Alarm for internal fault in inverter.",
+        "level": "Customer",
+        "title": "Warning Z1 Internal compressor control system fault"
+    },
+    "5453": {
+        "alternatives": [
+            {
+                "action": "Check main fuses with regards to poor contact and blown fuses.",
+                "reason": "Low or no voltage to outdoor unit."
+            },
+            {
+                "action": "With repeated warnings, contact the electricity supplier.",
+                "reason": "Low incoming mains voltage."
+            }
+        ],
+        "description": "Warning if incoming AC voltage to inverter < 165 V for 10 seconds. Warning is automatically reset after 2 minutes if the incoming AC voltage > 190 V.",
+        "level": "Customer",
+        "svdescription": "Str\u00f6mmatningen till utedelen utebliven. Kontrollera s\u00e4kringar till anl\u00e4ggningen. Larmet kan komma som falsklarm precis vid uppstart eller efter ett str\u00f6mavbrott, och f\u00f6rsvinner d\u00e5 automatiskt.",
+        "svheader": "Ingen sp\u00e4nning till v\u00e4rmepump.",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Warning Z1 No power supply to outdoor unit"
+    },
+    "5463": {
+        "alternatives": [
+            {
+                "action": "Gently melt the ice with hot water..",
+                "reason": "Evaporator clogged with ice."
+            },
+            {
+                "action": "Empty heat pump and fill according to information on type plate.",
+                "reason": "The heat pump is overfilled."
+            },
+            {
+                "action": "Open more thermostats in heating system.",
+                "reason": "Too low temperature on heating system."
+            },
+            {
+                "action": "Clean system filter/filterball SC1.",
+                "reason": "Dirt in system filter/filterball SC1."
+            }
+        ],
+        "description": "Alarm if timer for defrost exceeds 800 seconds 3 times, or if a the need to defrost has occured 3 times within minimal time, in heating mode.",
+        "level": "Customer",
+        "title": "Alarm Z1 Defrost failure. Clean outdoor unit"
+    },
+    "5500": {
+        "alternatives": [
+            {
+                "action": "Reset thermostat, adjust heat curve if necessary.",
+                "reason": "Protective thermostat for underfloor heating has been tripped."
+            }
+        ],
+        "description": "Alarm if the external input 1-3 on I/O module is closed, depending on selection.",
+        "level": "Customer",
+        "title": "Warning Underfloor heating temp. Limiter has tripped"
+    },
+    "5503": {
+        "alternatives": [
+            {
+                "action": "Check cabling/connections.",
+                "reason": "Incorrect cabling/connections."
+            },
+            {
+                "action": "Check CANbus connections on installer module and power guard.",
+                "reason": "Poor connection in CANbus connections on installer module or power guard."
+            },
+            {
+                "action": "Replace CANbus cable.",
+                "reason": "Interruption/break on CANbus cable between installer module and power guard."
+            },
+            {
+                "action": "Replace to correct type of CANbus cable. Check documentation for more information.",
+                "reason": "Incorrect type of CANbus cable."
+            },
+            {
+                "action": "Separate CANbus and power cables by at least 100 mm to prevent interference.",
+                "reason": "CANbus cable installed together with/close to supply voltage to heat pump."
+            }
+        ],
+        "description": "Communication between installer module and power guard is missing for 30 seconds.",
+        "level": "Installer",
+        "title": "Warning Connection problem with the power guard"
+    },
+    "5504": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5503.",
+                "reason": "See possible causes for warning code 5503."
+            }
+        ],
+        "description": "Alarm if warning 5503 is registered 3 times within 3 hours, or if the warning is active for 30 minutes.",
+        "level": "Customer",
+        "title": "Alarm Connection problem with the power guard"
+    },
+    "5506": {
+        "alternatives": [
+            {
+                "action": "Break power to heat pump and turn it on again.",
+                "reason": "Temporary malfunction in inverter."
+            },
+            {
+                "action": "Replace inverter.",
+                "reason": "Internal error in inverter."
+            }
+        ],
+        "description": "Alarm if the compressor has not started within 2 minutes after a start signal has been sent.",
+        "level": "Installer",
+        "title": "Alarm Z1 Compressor does not start"
+    },
+    "5507": {
+        "alternatives": [
+            {
+                "action": "Replace pressure guard if it triggers too early. Normal breaking pressure is 44 bar (R410A).",
+                "reason": "Defective pressure guard, i.e. broken circuit even though the current pressure is below the limit."
+            },
+            {
+                "action": "Check cabling/connections between MR1 and inverter.",
+                "reason": "Break or poor connection in cabling between MR1 and inverter."
+            },
+            {
+                "action": "Make sure that the high pressure guard is connected.",
+                "reason": "Break or poor connection in cabling between MR1 and inverter."
+            }
+        ],
+        "description": "The circuit for the high pressure guard MR1 is broken for more than 3 seconds. The compressor stops.",
+        "level": "Installer",
+        "svdescription": "Fl\u00f6desproblem. Vanligaste orsaken \u00e4r luft i v\u00e4rmesystemet, igensatt partikelfilter eller att termostaterna p\u00e5 v\u00e4rmesystemet \u00e4r nerstrypta s\u00e5 att fl\u00f6det blir f\u00f6r l\u00e5gt. Reng\u00f6r partikelfiltret och lufta v\u00e4rmesystemet. Se instruktionsfilmer via l\u00e4nken.",
+        "svheader": "H\u00f6gtryckslarm",
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "title": "Warning Z1 MR1 High pressure warn."
+    },
+    "5508": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5507 above.",
+                "reason": "See possible causes for warning code 5507 above."
+            }
+        ],
+        "description": "Alarm if warning 5507 is registrered 2 times within 3 hours.",
+        "level": "Customer",
+        "svdescription": "Fl\u00f6desproblem. Vanligaste orsaken \u00e4r luft i v\u00e4rmesystemet, igensatt partikelfilter eller att termostaterna p\u00e5 v\u00e4rmesystemet \u00e4r nerstrypta s\u00e5 att fl\u00f6det blir f\u00f6r l\u00e5gt. Reng\u00f6r partikelfiltret och lufta v\u00e4rmesystemet. Se instruktionsfilmer via l\u00e4nken.",
+        "svheader": "H\u00f6gtryckslarm",
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "title": "Alarm Z1 MR1 High pressure alarm"
+    },
+    "5512": {
+        "alternatives": [
+            {
+                "action": "The most likely cause is low outdoor temperature. See diagram, chapter 4 of installer guide.",
+                "reason": "Too low evaporating temperature in relation to condensation temperature."
+            }
+        ],
+        "description": "Warning if temperature of JR1 > the currently allowed envelope, for more than 30 seconds.",
+        "level": "Installer",
+        "title": "Warning Z1 Condensation temp. Outside control range"
+    },
+    "5513": {
+        "alternatives": [
+            {
+                "action": "The most likely cause is low outdoor temperature. See diagram, chapter 4 of installer guide.",
+                "reason": "Too low evaporating temperature in relation to condensation temperature."
+            },
+            {
+                "action": "Adjust temperature/flow.",
+                "reason": "Too high flow or too low delta on heating system."
+            }
+        ],
+        "description": "Alarm if 3 warnings (code 5512) are registered within 3 hours, or warning active for 30 minutes.",
+        "level": "Customer",
+        "svdescription": "Uppst\u00e5r om v\u00e4rmepumpen hamnar utanf\u00f6r sitt arbetsomr\u00e5de. Kontrollera fl\u00f6det i v\u00e4rmesystemet samt \u00f6ver v\u00e4rmepumpen. S\u00e4nk kurvlutning samt varmvatteninst\u00e4llningen.",
+        "svheader": "F\u00f6r h\u00f6g kondensering i v\u00e4rmepump.",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Alarm Z1 Condensation temperature too high"
+    },
+    "5514": {
+        "alternatives": [
+            {
+                "action": "Ensure sufficient air flow through air heat exchanger.",
+                "reason": "Blocked or low air flow through air heat exchanger of heat pump."
+            },
+            {
+                "action": "Activate test for outdoor unit.",
+                "reason": "Defective fan."
+            },
+            {
+                "action": "Check if 230 V voltage is available on output PL3, terminal 32 (78, N)",
+                "reason": "230 V supply voltage missing from fan."
+            },
+            {
+                "action": "Check 0-10V voltage on output PL3 PWM, terminal 20 (20, 26) using test function for outdoor unit.",
+                "reason": "0-10 V control signal missing for fan."
+            },
+            {
+                "action": "If voltages are available in accordance with above and the fan is still not running, replace the fan.",
+                "reason": "Defective fan."
+            },
+            {
+                "action": "Check control cables to expansion valves. Run test cycle for outdoor unit and check that the expansion valves are opening.",
+                "reason": "One of the expansion valves has got stuck in its closed position."
+            },
+            {
+                "action": "If any of the voltages are missing, in accordance with above, replace the I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if temperature of JR0 < the currently allowed envelope (-27\u00b0C) for more than 30 seconds.",
+        "level": "Installer",
+        "svdescription": "Kan vara ett fl\u00f6desproblem. Kontrollera s\u00e5 att termostater \u00e4r \u00f6ppna p\u00e5 v\u00e4rmesystemet. Filter kan vara igensatt p\u00e5 v\u00e4rmeb\u00e4rarsidan. Lufta systemet. Se instruktionsfilmer knappen h\u00e4r bredvid. Om detta inte hj\u00e4lper, kontakta er installat\u00f6r. ",
+        "svheader": "Larm l\u00e5g f\u00f6r\u00e5ngning JR0 i v\u00e4rmepump L\u00e5gtryckslarm.",
+        "svheatpump": "IVT Geo 312/412 Bergv\u00e4rmepump",
+        "title": "Warning Z1 Evap. Pressure on JR0 too low"
+    },
+    "5515": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5514.",
+                "reason": "See possible causes for warning code 5514."
+            }
+        ],
+        "description": "Alarm if 3 warnings (code 5514) are registered within 3 hours, or if warning is active for 30 minutes.",
+        "level": "Customer",
+        "svdescription": "L\u00e5gtryckslarm. Kontrollera s\u00e5 att inte fl\u00e4kten \u00e4r blockerad. Annars kontakta Er installat\u00f6r. Se instruktionsfilmer via l\u00e4nken.",
+        "svheader": "Larm l\u00e5g f\u00f6r\u00e5ngning JR0 i v\u00e4rmepump.",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Alarm Z1 Evap. Pressure on JR0 too low"
+    },
+    "5522": {
+        "alternatives": [
+            {
+                "action": "Check combination.",
+                "reason": "Non matching combination of heat pump and indoor unit."
+            },
+            {
+                "action": "Compare setting with rotary encoder of old I/O module. If that is not available the information can be found in the installer guide.",
+                "reason": "If I/O module has been replaced, it's possible that rotary encoder has not been set up correctly on the new I/O module."
+            },
+            {
+                "action": "Check setting of the rotary encoder, compare it to old board.",
+                "reason": "When replacing installer module, the rotary encoder has not been set up properly on the new board."
+            }
+        ],
+        "description": "Setting of rotary encoder on installer board does not match the installed heat pump.",
+        "level": "Installer",
+        "title": "Alarm Wrong combination of indoor and outdoor units."
+    },
+    "5523": {
+        "alternatives": [
+            {
+                "action": "Temporary malfunction. Await possible alarm in customer level (code 5524), until applying further actions..",
+                "reason": "Internal error in inverter."
+            }
+        ],
+        "description": "Warning if incoming AC current > 31 A, 6 times. The warning is automatically reset after 4 minutes if the condition is no longer fulfilled.",
+        "level": "Installer",
+        "title": "Warning Z1 Internal compressor driver warning 3"
+    },
+    "5524": {
+        "alternatives": [
+            {
+                "action": "Replace inverter.",
+                "reason": "Internal error in inverter."
+            }
+        ],
+        "description": "Alarm if warning 5524 is registered 3 times within 3 hours, or if the warning is active for 30 minutes.",
+        "level": "Customer",
+        "svdescription": "Kan vara falsklarm vid ev. str\u00f6mavbrott. Vid \u00e5terkommande larm \u00e4r det fel i inverter eller kompressor. Kontakta Er installat\u00f6r.",
+        "svheader": "Larm v\u00e4rmepump \u00f6verstr\u00f6m av kompressordrivern.",
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "title": "Alarm Z1 Internal compressor driver error 3"
+    },
+    "5527": {
+        "alternatives": [
+            {
+                "action": "Evacuate heat pump and refill with quantity specifed on type plate.",
+                "reason": "Heat pump overfilled."
+            }
+        ],
+        "description": "Alarm if JR1 > (TC3 + 5\u00b0C) and subcooling > set point value. Both conditions needs to be fulfilled for more than 5 minutes during hot water production.",
+        "level": "Customer",
+        "title": "Alarm Z1 Too much refrigerant in cooling circuit"
+    },
+    "5531": {
+        "alternatives": [
+            {
+                "action": "Check screw terminal.",
+                "reason": "Screw terminal for compressor sensor TR1, on I/O module, not properly tightened."
+            },
+            {
+                "action": "Replace compressor sensor TR1.",
+                "reason": "Broken compressor sensor TR1/signal cable."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TR1 is broken (> 364 kOhm), for more than 2 hours.",
+        "level": "Installer",
+        "title": "Warning Z1 Compr. temperature sensor TR1 open circuit"
+    },
+    "5532": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from I/O module, measure resistance of sensor. If shorted, replace sensor.",
+                "reason": "Compressor sensor TR1/signal cable is shorted."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TR1 is broken (<350 Ohm).",
+        "level": "Installer",
+        "title": "Warning Z1 Compr. temperature sensor TR1 short circuit"
+    },
+    "5533": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning codes 5531, 5532.",
+                "reason": "See possible causes for warning codes 5531, 5532."
+            }
+        ],
+        "description": "Alarm if any of the warnings 5531, 5532, are registered 3 times within 3 hours, or if circuit is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Compressor temperature sensor TR1 failure"
+    },
+    "5541": {
+        "alternatives": [
+            {
+                "action": "Check CANbus connections on installer module and pool module.",
+                "reason": "Poor connection in CANbus connections on installer module or pool module."
+            },
+            {
+                "action": "Replace CANbus cable between installer module and pool module.",
+                "reason": "Break on CANbus cable between installer module and pool module."
+            },
+            {
+                "action": "Change to the correct type of cable. More information can be found in the installer guide.",
+                "reason": "Improper type of CANbus cable."
+            },
+            {
+                "action": "Separate CANbus and power cables by at least 100 mm to prevent interference.",
+                "reason": "CANbus cable installed together with/close to supply voltage to heat pump."
+            },
+            {
+                "action": "Disconnect/connect cable shield from/to earth.",
+                "reason": "Improper earthing of CANbus cable."
+            }
+        ],
+        "description": "No communication between installer module and pool board for 90 seconds.",
+        "level": "Customer",
+        "title": "Alarm Pool board communication failure"
+    },
+    "5543": {
+        "alternatives": [
+            {
+                "action": "Measure the temperature with an external thermometer. If the value presented in the display does not match the measured valye, replace the sensor.",
+                "reason": "Incorrect reading from suction gas temperature sensor TR5."
+            },
+            {
+                "action": "Connect manometer check the pressure on the low pressure side. Replace the low pressure sensor if the values do not match.",
+                "reason": "Incorrect reading from low pressure sensor JR0."
+            },
+            {
+                "action": "Check that the cabling is properly attached in both ends.",
+                "reason": "Poor connection of control signal cables for expansion valve."
+            },
+            {
+                "action": "A suction gas overheating below 6 degrees for 10 minutes, can be a sign of shortage, but the symptoms can also be caused by an expansion valve that doesn't open properly. Contact local service department for guidance.",
+                "reason": "Lack of refrigerant or defective expansion valve."
+            }
+        ],
+        "description": "Suction gas overheating (TR5 - JR0) exceeds 10 degrees for more than 10 minutes, where TR5 is the suction gas temp and JR0 is the low pressure sensor.",
+        "level": "Installer",
+        "title": "Warning Z1 Overheating temperature is excessive"
+    },
+    "5545": {
+        "alternatives": [
+            {
+                "action": "Check screw terminals on I/O module.",
+                "reason": "Screw terminals for sensors not properly tightened on I/O module."
+            },
+            {
+                "action": "Replace sensors TB0, TB1 / repair signal cable(s).",
+                "reason": "Brine sensor TB0 and TB1 / signal cables broken."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Alarm after 3 registered errors within 2 hours, or 15 minutes of broken/shorted circuit for sensor TB0 and TB1.",
+        "level": "Customer",
+        "title": "Alarm Z1 Both brine temp. Sensors TB0 and TB1 are defective"
+    },
+    "5547": {
+        "alternatives": [
+            {
+                "action": "Compare sensor reading to actual temperature. Replace sensor if there is a deviation.",
+                "reason": "Incorrect reading from sensor TB0."
+            }
+        ],
+        "description": "Warning if TB0 < -6\u00b0C (for borehole) or +2\u00b0C (for groundwater)",
+        "level": "Installer",
+        "title": "Warning Z1 Brine inlet temperature at TB0 is too low"
+    },
+    "5549": {
+        "alternatives": [
+            {
+                "action": "Compare sensor reading to actual temperature. Replace sensor if there is a deviation.",
+                "reason": "Incorrect reading from sensor TB0."
+            }
+        ],
+        "description": "Alarm if TB0 < -6\u00b0C (for borehole) or +2\u00b0C (for groundwater)",
+        "level": "Customer",
+        "title": "Alarm Z1 Brine inlet temperature at TB0 is too low"
+    },
+    "5551": {
+        "alternatives": [
+            {
+                "action": "Compare sensor reading to actual temperature. Replace sensor if there is a deviation.",
+                "reason": "Incorrect reading from sensor TB1."
+            }
+        ],
+        "description": "Warning if TB1 < -6\u00b0C (for borehole) or +2\u00b0C (for groundwater)",
+        "level": "Installer",
+        "title": "Warning Z1 Brine outlet temperature at TB1 is too low"
+    },
+    "5553": {
+        "alternatives": [
+            {
+                "action": "Compare sensor reading to actual temperature. Replace sensor if there is a deviation.",
+                "reason": "Incorrect reading from sensor TB1."
+            }
+        ],
+        "description": "Alarm if TB1 < -6\u00b0C (for borehole) or +2\u00b0C (for groundwater)",
+        "level": "Customer",
+        "title": "Alarm Z1 Brine outlet temperature at TB1 is too low"
+    },
+    "5555": {
+        "alternatives": [
+            {
+                "action": "Compare sensor reading to actual temperature. Replace sensor if there is a deviation.",
+                "reason": "Incorrect reading from sensor TB0."
+            }
+        ],
+        "description": "Warning if TB0 > 30\u00b0C for 15 seconds. The compressor stops.",
+        "level": "Installer",
+        "title": "Warning Z1 Brine inlet temperature at TB0 is too high"
+    },
+    "5557": {
+        "alternatives": [
+            {
+                "action": "Compare sensor reading to actual temperature. Replace sensor if there is a deviation.",
+                "reason": "Incorrect reading from sensor TB0."
+            }
+        ],
+        "description": "Alarm if TB0 > 30\u00b0C for 15 seconds. The compressor stops.",
+        "level": "Customer",
+        "title": "Alarm Z1 Brine inlet temperature at TB0 is too high"
+    },
+    "5559": {
+        "alternatives": [
+            {
+                "action": "Compare sensor reading to actual temperature. Replace sensor if there is a deviation.",
+                "reason": "Incorrect reading from sensor TB0."
+            }
+        ],
+        "description": "Warning if TB1 > 30\u00b0C for 15 seconds. The compressor stops.",
+        "level": "Installer",
+        "title": "Warning Z1 Brine outlet temperature at TB1 is too high"
+    },
+    "5561": {
+        "alternatives": [
+            {
+                "action": "Compare sensor reading to actual temperature. Replace sensor if there is a deviation.",
+                "reason": "Incorrect reading from sensor TB0."
+            }
+        ],
+        "description": "Alarm if TB1 > 30\u00b0C for 15 seconds. The compressor stops.",
+        "level": "Customer",
+        "title": "Alarm Z1 Brine outlet temperature at TB1 is too high"
+    },
+    "5563": {
+        "alternatives": [
+            {
+                "action": "Check filter. Clean if necessary.",
+                "reason": "System filter/filterball is clogged."
+            },
+            {
+                "action": "De-air brine system according to instruction in manual.",
+                "reason": "Air in brine system."
+            },
+            {
+                "action": "Test brine pump PB3 using manual operation from the display.",
+                "reason": "Brine circulation pump PB3 is defective."
+            },
+            {
+                "action": "Compare displayed values to actual temperatures measured with an external thermometer. Replace sensor(s) if deviation(s) found.",
+                "reason": "Bad reading from brine sensor TB0/TB1."
+            }
+        ],
+        "description": "Warning if delta between TB0 and TB1 > 10 degrees K and TB1 must be < 10\u00b0C.",
+        "level": "Installer",
+        "title": "Warning Z1 High temp. Difference between TB0 and TB1"
+    },
+    "5565": {
+        "alternatives": [
+            {
+                "action": "Check filter. Clean if necessary.",
+                "reason": "System filter/filterball is clogged."
+            },
+            {
+                "action": "De-air brine system according to instruction in manual.",
+                "reason": "Air in brine system."
+            },
+            {
+                "action": "Test brine pump PB3 using manual operation from the display.",
+                "reason": "Brine circulation pump PB3 is defective."
+            },
+            {
+                "action": "Compare displayed values to actual temperatures measured with an external thermometer. Replace sensor(s) if deviation(s) found.",
+                "reason": "Bad reading from TB0/TB1."
+            }
+        ],
+        "description": "Alarm if delta between TB0 and TB1 > 10K and TB1 must be < 10\u00b0C. Alarm if 3 stops within 2 hours.",
+        "level": "Customer",
+        "title": "Alarm Z1 High temperature difference between TB0 and TB1"
+    },
+    "5567": {
+        "alternatives": [
+            {
+                "action": "Check filter. Clean if necessary.",
+                "reason": "System filter/filterball is clogged."
+            },
+            {
+                "action": "De-air brine system according to instruction in manual.",
+                "reason": "Air in brine system."
+            },
+            {
+                "action": "Test brine pump PB3 using manual operation from the display.",
+                "reason": "Brine circulation pump PB3 is defective."
+            }
+        ],
+        "description": "Warning if SSM I/O module, terminal 74-75 circuit is broken.",
+        "level": "Installer",
+        "title": "Warning Z1 Brine pump failure"
+    },
+    "5569": {
+        "alternatives": [
+            {
+                "action": "Check filter. Clean if necessary.",
+                "reason": "System filter/filterball is clogged."
+            },
+            {
+                "action": "De-air brine system according to instruction in manual.",
+                "reason": "Air in brine system."
+            },
+            {
+                "action": "Test brine pump PB3 using manual operation from the display.",
+                "reason": "Brine circulation pump PB3 is defective."
+            }
+        ],
+        "description": "Alarm if SSM input is open for more than 3 minutes. I/O module terminal 74-75.",
+        "level": "Customer",
+        "title": "Alarm Z1 Brine pump failure"
+    },
+    "5571": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from I/O module, measure resistance of sensor. If shorted, replace sensor.",
+                "reason": "Circuit for brine in sensor TB0 is broken."
+            },
+            {
+                "action": "Check screw terminal.",
+                "reason": "Screw terminal for sensor TB0 on I/O module not properly tightened."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TB0 is shorted (< 390 Ohm).",
+        "level": "Installer",
+        "title": "Warning Z1 Brine inlet temperature sensor TB0 short-circuit"
+    },
+    "5573": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from I/O module, measure resistance of sensor. If broken, replace sensor or repair signal cable..",
+                "reason": "Brine in sensor TB0/signal cable broken."
+            },
+            {
+                "action": "Check screw terminal.",
+                "reason": "Screw terminal for brine sensor TB0 not properly tightened."
+            },
+            {
+                "action": " Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TB0 is broken (> 179 kOhm).",
+        "level": "Installer",
+        "title": "Warning Z1 Brine inlet temperature sensor TB0 open circuit"
+    },
+    "5575": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning codes5571, 5573.",
+                "reason": "See possible causes for warning codes 5571, 5573."
+            }
+        ],
+        "description": "Alarm if any of the warning codes 5571, 5573, are registered 3 times within 2 hours, or circuit for sensor TB0 is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Alarm Z1 Brine inlet temperature sensor TB0 failure"
+    },
+    "5577": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from I/O module, measure resistance of sensor. If shorted, replace sensor or repair signal cable.",
+                "reason": "Brine out sensor TB1/signal cable is shorted."
+            },
+            {
+                "action": "Check screw terminal on I/O module.",
+                "reason": "Screw terminal for brine sensor TB1 not properly tightened."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TB1 is shorted (< 390 Ohm).",
+        "level": "Installer",
+        "title": "Warning Z1 Brine outlet temperature sensor TB1 short-circuit"
+    },
+    "5579": {
+        "alternatives": [
+            {
+                "action": "With sensor disconnected from I/O module, measure resistance of sensor. If broken, replace sensor or repair signal cable.",
+                "reason": "Brine out sensor TB1/signal cable is broken."
+            },
+            {
+                "action": "Check screw terminal on I/O module.",
+                "reason": "Screw terminal for brine sensor TB1 not properly tightened."
+            },
+            {
+                "action": "Replace I/O module.",
+                "reason": "Defective I/O module."
+            }
+        ],
+        "description": "Warning if circuit for sensor TB1 is shorted (> 179 kOhm).",
+        "level": "Installer",
+        "title": "Warning Z1 Brine outlet temperature sensor TB1 open circuit"
+    },
+    "5581": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning codes 5577, 5579.",
+                "reason": "See possible causes for warning codes 5577, 5579."
+            }
+        ],
+        "description": "Alarm if any of the warning codes 5577, 5579, are registered three times within 2 hours, or if circuit for TB1 is continuously broken/shorted for 15 minutes.",
+        "level": "Customer",
+        "title": "Warning Z1 Brine outlet temperature sensor TB1 failure"
+    },
+    "5585": {
+        "alternatives": [
+            {
+                "action": "See possible actions for warning code 5567.",
+                "reason": "See possible causes for warning code 5567."
+            }
+        ],
+        "description": "Alarm i JR0 indicated low pressure, after 3 warnings within 3 hours. (Note! Only active in cooling mode.)",
+        "level": "Customer",
+        "title": "Alarm Z1 Low pressure sensor detect. problems in brine circuit"
+    },
+    "5596": {
+        "alternatives": [
+            {
+                "action": "Clean the air filter",
+                "reason": "Air filter needs cleaning"
+            }
+        ],
+        "description": "Occurs monthly",
+        "level": "Customer",
+        "svdescription": "P\u00e5minnelse om att kunden beh\u00f6ver reng\u00f6ra luftfiltret. Sker varannan m\u00e5nad. Se instruktionsfilmer knappen h\u00e4r bredvid.",
+        "svheader": "Larm Reng\u00f6r luftfiltret ",
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "title": "Reminder that the customer needs to clean the air filter."
+    },
+    "5666": {
+        "alternatives": [
+            {
+                "action": "Clean the air filter",
+                "reason": "Air filter is dirty"
+            },
+            {
+                "action": "Contact your installer",
+                "reason": "Air filter is clean, but evaporation pressure is too low"
+            }
+        ],
+        "description": "Minimum exit air flow and temperature are not correlated",
+        "level": "Customer",
+        "svdescription": "L\u00e5g inomhustemperatur eller l\u00e5gt luftfl\u00f6de. Minsta till\u00e5tna fr\u00e5nluftsfl\u00f6de och temperatur \u00e4r beroende av varandra. Reng\u00f6r luftfiltret. Se instruktionsfilmer knappen h\u00e4r bredvid. Vid \u00e5terkommande larm och fl\u00e4kten g\u00e5r, filter \u00e4r rent kontakter er installat\u00f6r.",
+        "svheader": "F\u00f6r\u00e5ngningstryck f\u00f6r l\u00e5gt",
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "title": "Low indoors temperature or low airflow"
+    },
+    "5667": {
+        "alternatives": [
+            {
+                "action": "Clean the air filter",
+                "reason": "Air filter is dirty"
+            },
+            {
+                "action": "Contact your installer",
+                "reason": "Air filter is clean, but evaporation pressure is too low"
+            }
+        ],
+        "description": "Minimum exit air flow and temperature are not correlated",
+        "level": "Customer",
+        "svdescription": "L\u00e5g inomhustemperatur eller l\u00e5gt luftfl\u00f6de. Minsta till\u00e5tna fr\u00e5nluftsfl\u00f6de och temperatur \u00e4r beroende av varandra. Reng\u00f6r luftfiltret. Se instruktionsfilmer knappen h\u00e4r bredvid. Vid \u00e5terkommande larm och fl\u00e4kten g\u00e5r, filter \u00e4r rent kontakter er installat\u00f6r",
+        "svheader": "F\u00f6r\u00e5ngningstryck f\u00f6r l\u00e5gt",
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "title": "Low indoors temperature or low airflow"
+    }
+}

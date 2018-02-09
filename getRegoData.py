@@ -92,6 +92,16 @@ def main() :
         elif args.mode == 'values':
             pdata = json.loads(data.decode())
             print(json.dumps(pdata["values"], sort_keys=True, indent=4))
+        elif args.mode == 'errcodes':
+            ecfile = config.get(args.configsection, 'errcodes');
+            with open(ecfile) as data_file:
+                errcodes = json.load(data_file)
+            pdata = json.loads(data.decode())
+            for v in pdata["values"] :
+                print(json.dumps(v, sort_keys=True, indent=4))
+                if v["ccd"] in errcodes :
+                    print(json.dumps(errcodes[v["ccd"]], sort_keys=True, indent=4))
+                print("--------------")
 
 if __name__ == "__main__":
     main()
