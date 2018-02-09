@@ -17,14 +17,14 @@ you can check each leaf manually to determine what it represents. Use a command 
 to enumerate the paths:
 
 ```bash
-python3 getRegoData.py -c config.ini -s myrego -x -p "/,/dhwCircuits,/heatingCircuits,/recordings,/solarCircuits,/system,/gateway,/heatSources,/notifications"
+python3 getRegoData.py -c config.ini -s myrego -x -p "/,/dhwCircuits,/heatingCircuits,/recordings,/solarCircuits,/system,/gateway,/heatSources,/notifications,/application"
 ```
 
 Use the output from this to update the file **URLs.txt**, which is used by the shell script
 **getVals.sh** to fetch the actual data. To initialize the file, you can use this command:
 
 ```bash
-python3 getRegoData.py -c config.ini -s myrego -x -p "/,/dhwCircuits,/heatingCircuits,/recordings,/solarCircuits,/system,/gateway,/heatSources,/notifications" | grep "^scalar:" | sed 's/scalar/scalar:on/' > URLs.txt
+python3 getRegoData.py -c config.ini -s myrego -x -p "/,/dhwCircuits,/heatingCircuits,/recordings,/solarCircuits,/system,/gateway,/heatSources,/notifications,/application" | grep "^scalar:" | sed 's/scalar/scalar:on/' > URLs.txt
 ```
 
 Then change any values you don't need to fetch on every run to "off" in the file.
