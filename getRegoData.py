@@ -99,8 +99,8 @@ def main() :
             pdata = json.loads(data.decode())
             for v in pdata["values"] :
                 print(json.dumps(v, sort_keys=True, indent=4))
-                if v["ccd"] in errcodes :
-                    print(json.dumps(errcodes[v["ccd"]], sort_keys=True, indent=4))
+                if str(v["ccd"]) in errcodes :
+                    print(json.dumps(errcodes[str(v["ccd"])], sort_keys=True, indent=4))
                 print("--------------")
 
 if __name__ == "__main__":
