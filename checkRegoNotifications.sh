@@ -14,6 +14,12 @@ fi
 
 python3 $RUNDIR/getRegoData.py -c $CONFFILE -s $SECTION -p /notifications -m errcodes > $RUNDIR/notifications_new.txt
 
+if [ -s $RUNDIR/notifications_new.txt ]; then
+    :
+else
+    echo "No active notifications" > $RUNDIR/notifications_new.txt
+fi
+
 if diff >/dev/null 2>&1 $RUNDIR/notifications_save.txt $RUNDIR/notifications_new.txt; then
     rm $RUNDIR/notifications_new.txt
 else
