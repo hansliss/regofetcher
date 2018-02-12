@@ -1,0 +1,71 @@
+#macro tab2 @alts:
+#for @alt in @alts:
+<tr><td>@alt.reason</td><td>@alt.action</td></tr>
+#end
+#end
+<html>
+  <head>
+    <style>
+      body {
+      background-color: fffef5;
+      }
+      
+      h1 {
+      color: maroon;
+      text-align: center;
+      }
+
+      div.notification {
+      border: 1px solid #DDDDDD;
+      margin: 5px;
+      padding: 10px;
+      }
+      
+      div.svtext {
+      border: 1px solid #EEEEEE;
+      color: 444444;
+      background-color: #f5fff7;
+      padding: 5px;
+      margin: 0;
+      }
+
+      p.orig {
+      font-size: small;
+      }
+      
+      div.alternatives table {
+      border-collapse: collapse;
+      }
+      
+      div.alternatives table td,div.alternatives table th {
+      border: 1px solid #999999;
+      padding: 5px;
+      }
+    </style>
+    <title>Notifications from heatpump</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    #for @nfi in @notifications:
+    <div class="notification">
+      <h1>@nfi.orig.dcd/@nfi.orig.ccd: @nfi.explanation.title</h1>
+      <p class="level"><strong>Level: @nfi.explanation.level</strong></p>
+      <p class="description">@nfi.explanation.description</p>
+      #if (@nfi.explanation.svheader)
+      <div class="svtext">
+	  <h2>@nfi.explanation.svheader</h2>
+	  <p class="svdescription">@nfi.explanation.svdescription</p>
+	  <p class="equipment">@nfi.explanation.svheatpump</p>
+      </div>
+      #end
+      <p class="orig">act=@nfi.orig.act, dlv=@nfi.orig.dlv, fc=@nfi.orig.fc, orig=@nfi.orig.orig</p>
+      <div class="alternatives">
+	<table>
+	  <tr><th>Reason</th><th>Action</th></tr>
+	  #tab2 @nfi.explanation.alternatives:
+	</table>
+      </div>
+    </div>
+    #end
+  </body>
+</html>

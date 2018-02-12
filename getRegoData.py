@@ -9,6 +9,7 @@ import urllib.request
 import argparse
 import configparser
 from Crypto.Cipher import AES
+from quik import FileLoader
 
 def makeKey(vendorkey, devicepassword, userpassword) :
     vendorkeyb = base64.b64decode(vendorkey)
@@ -51,6 +52,7 @@ def main() :
     devicepassword = config.get(args.configsection, 'devicepassword');
     userpassword = config.get(args.configsection, 'userpassword');
     key = makeKey(vendorkey, devicepassword, userpassword)
+    htmltemplate = config.get(args.configsection, 'htmltemplate');
 
     if args.explore :
         startpaths = args.path.split(',')
@@ -97,11 +99,17 @@ def main() :
             with open(ecfile) as data_file:
                 errcodes = json.load(data_file)
             pdata = json.loads(data.decode())
+            notifications=[]
             for v in pdata["values"] :
-                print(json.dumps(v, sort_keys=True, indent=4))
+                note={}
+                note["orig"] = v
                 if str(v["ccd"]) in errcodes :
-                    print(json.dumps(errcodes[str(v["ccd"])], sort_keys=True, indent=4))
-                print("--------------")
+                    note["explanation"] = errcodes[str(v["ccd"])]
+                notifications.append(note)
+            loader = FileLoader('')
+            template = loader.load_template(htmltemplate)
+            print (template.render(locals(), loader=loader))
+
 
 if __name__ == "__main__":
     main()

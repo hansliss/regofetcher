@@ -7,6 +7,8 @@ should be able to talk to all those units. Give it a try, unless you want to use
 base for playing around and building your own monitoring tools.
 
 ## Setting up
+This uses Quik for templating, for the notification system: https://github.com/avelino/quik
+
 Copy **config.ini.template** to **config.ini** and edit it, adding the information for your particular
 gateway module. Depending on the vendor, you may have to find the correct vendor key, which is
 commonly called a "salt", even thought it isn't a salt. Encode the vendor key with Base64.

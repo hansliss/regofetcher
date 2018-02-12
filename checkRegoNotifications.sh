@@ -23,7 +23,7 @@ fi
 if diff >/dev/null 2>&1 $RUNDIR/notifications_save.txt $RUNDIR/notifications_new.txt; then
     rm $RUNDIR/notifications_new.txt
 else
-    mail -s "Notifications from heat pump" $MAILRCPT < $RUNDIR/notifications_new.txt
+    mail -s "Notifications from heat pump" -a "Content-Type: text/html; charset: UTF-8" $MAILRCPT < $RUNDIR/notifications_new.txt
     mv $RUNDIR/notifications_new.txt $RUNDIR/notifications_save.txt
 fi
     
