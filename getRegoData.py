@@ -108,7 +108,10 @@ def main() :
                 notifications.append(note)
             loader = FileLoader('')
             template = loader.load_template(htmltemplate)
-            print (template.render(locals(), loader=loader))
+            if notifications : 
+                print (template.render(locals(), loader=loader))
+            else :
+                print ('<html><head></head><body><h1>No active notifications</h1></body></html>');
 
 
 if __name__ == "__main__":
