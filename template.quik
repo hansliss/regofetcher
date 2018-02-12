@@ -49,16 +49,24 @@
     #for @nfi in @notifications:
     <div class="notification">
       <h1>@nfi.orig.dcd/@nfi.orig.ccd: @nfi.explanation.title</h1>
+      <p class="orig">Data from gateway: act=@nfi.orig.act, cat=@nfi.orig.cat, ccd=@nfi.orig.ccd, dcd=@nfi.orig.dcd, dlv=@nfi.orig.dlv, fc=@nfi.orig.fc, orig=@nfi.orig.orig</p>
+      <p class="info"><em>Main information fetched from service manual for IVT Geo 312c/Bosch Compress 7000.</em></p>
       <p class="level"><strong>Level: @nfi.explanation.level</strong></p>
       <p class="description">@nfi.explanation.description</p>
       #if (@nfi.explanation.svheader)
       <div class="svtext">
-	  <h2>@nfi.explanation.svheader</h2>
+	  <h2>IVT web form: @nfi.explanation.svheader</h2>
 	  <p class="svdescription">@nfi.explanation.svdescription</p>
 	  <p class="equipment">@nfi.explanation.svheatpump</p>
       </div>
       #end
-      <p class="orig">act=@nfi.orig.act, dlv=@nfi.orig.dlv, fc=@nfi.orig.fc, orig=@nfi.orig.orig</p>
+      #if (@nfi.explanation.sv2header)
+      <div class="svtext">
+	  <h2>Felkoder för Reglercentral HMC300: @nfi.explanation.sv2header</h2>
+	  <p class="sv2reason">@nfi.explanation.sv2reason</p>
+	  <p class="sv2action">@nfi.explanation.sv2action</p>
+      </div>
+      #end
       <div class="alternatives">
 	<table>
 	  <tr><th>Reason</th><th>Action</th></tr>

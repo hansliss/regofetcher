@@ -1560,7 +1560,11 @@
                 "reason": "Protective thermostat for underfloor heating has been tripped.",
                 "action": "Reset thermostat, adjust heat curve if necessary."
             }
-        ]
+        ],
+        "sv2category": "A01",
+        "sv2header": "Golv\u00e4rmetermostaten p\u00e5 externing\u00e5ngen \u00e4r utl\u00f6st",
+        "sv2reason": "F\u00f6r h\u00f6g temperatur till golvv\u00e4rmekretsen.",
+        "sv2action": "Justera inst\u00e4llningen av v\u00e4rmekurvan."
     },
     "5503": {
         "level": "Installer",
@@ -1587,7 +1591,11 @@
                 "reason": "CANbus cable installed together with/close to supply voltage to heat pump.",
                 "action": "Separate CANbus and power cables by at least 100 mm to prevent interference."
             }
-        ]
+        ],
+        "sv2category": "A01",
+        "sv2header": "Varning Problem med anslutningen till belastningsvakt",
+        "sv2reason": "St\u00f6rning i CAN-BUS anslutningen till belastningsvakten.",
+        "sv2action": "Kontrollera kabel och anslutningar av CAN-BUS."
     },
     "5504": {
         "level": "Customer",
@@ -1598,7 +1606,11 @@
                 "reason": "See possible causes for warning code 5503.",
                 "action": "See possible actions for warning code 5503."
             }
-        ]
+        ],
+        "sv2category": "A01",
+        "sv2header": "Alarm Anslutningen till belastningsvakten \u00e4r avbruten",
+        "sv2reason": "Ingen kontakt med belastningsvakten.",
+        "sv2action": "Kontrollera kabel och anslutningar av CAN-BUS."
     },
     "5506": {
         "level": "Installer",
@@ -1613,7 +1625,11 @@
                 "reason": "Internal error in inverter.",
                 "action": "Replace inverter."
             }
-        ]
+        ],
+        "sv2category": "A01",
+        "sv2header": "Kompressorn startar ej",
+        "sv2reason": "Kompressorn startar ej inom 2 minuter d\u00e5 den f\u00e5tt startsignal.",
+        "sv2action": "Kontrollera \u00f6vriga larm innan service kontaktas"
     },
     "5507": {
         "level": "Installer",
@@ -1635,7 +1651,11 @@
         ],
         "svdescription": "Fl\u00f6desproblem. Vanligaste orsaken \u00e4r luft i v\u00e4rmesystemet, igensatt partikelfilter eller att termostaterna p\u00e5 v\u00e4rmesystemet \u00e4r nerstrypta s\u00e5 att fl\u00f6det blir f\u00f6r l\u00e5gt. Reng\u00f6r partikelfiltret och lufta v\u00e4rmesystemet. Se instruktionsfilmer via l\u00e4nken.",
         "svheader": "H\u00f6gtryckslarm",
-        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump"
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "sv2category": "A01",
+        "sv2header": "MR1 h\u00f6gtryckslarm B i v\u00e4rmepump Z1",
+        "sv2reason": "H\u00f6gt tryck i k\u00f6ldmediekretsen.",
+        "sv2action": "Kontrollera v\u00e4rmekurva och varmvatteninst\u00e4llningar."
     },
     "5508": {
         "level": "Customer",
@@ -1649,7 +1669,11 @@
         ],
         "svdescription": "Fl\u00f6desproblem. Vanligaste orsaken \u00e4r luft i v\u00e4rmesystemet, igensatt partikelfilter eller att termostaterna p\u00e5 v\u00e4rmesystemet \u00e4r nerstrypta s\u00e5 att fl\u00f6det blir f\u00f6r l\u00e5gt. Reng\u00f6r partikelfiltret och lufta v\u00e4rmesystemet. Se instruktionsfilmer via l\u00e4nken.",
         "svheader": "H\u00f6gtryckslarm",
-        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump"
+        "svheatpump": "Vent 202 Fr\u00e5nluftsv\u00e4rmepump",
+        "sv2category": "H01",
+        "sv2header": "MR1 h\u00f6gtryckslarm A i v\u00e4rmepump Z1",
+        "sv2reason": "H\u00f6gt tryck i k\u00f6ldmediekretsen. 3 varningar inom 3 timmar eller om varningen \u00e4r aktiv mer \u00e4n 30 minuter.",
+        "sv2action": "Kontrollera v\u00e4rmekurva och varmvatteninst\u00e4llningar."
     },
     "5512": {
         "level": "Installer",
@@ -1660,7 +1684,11 @@
                 "reason": "Too low evaporating temperature in relation to condensation temperature.",
                 "action": "The most likely cause is low outdoor temperature. See diagram, chapter 4 of installer guide."
             }
-        ]
+        ],
+        "sv2category": "H01",
+        "sv2header": "Kondenseringstemperaturen utanf\u00f6r envelopen i v\u00e4rmepump Z1",
+        "sv2reason": "Temperaturen p\u00e5 givare PH1 \u00f6verstiger gr\u00e4nsv\u00e4rdet i 30 sekunder.",
+        "sv2action": "Kontrollera v\u00e4rmekurva och varmvatteninst\u00e4llningar."
     },
     "5513": {
         "level": "Customer",
@@ -1678,7 +1706,11 @@
         ],
         "svdescription": "Uppst\u00e5r om v\u00e4rmepumpen hamnar utanf\u00f6r sitt arbetsomr\u00e5de. Kontrollera fl\u00f6det i v\u00e4rmesystemet samt \u00f6ver v\u00e4rmepumpen. S\u00e4nk kurvlutning samt varmvatteninst\u00e4llningen.",
         "svheader": "F\u00f6r h\u00f6g kondensering i v\u00e4rmepump.",
-        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump "
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "sv2category": "H01",
+        "sv2header": "F\u00f6r h\u00f6g kondensering i v\u00e4rmepump Z1",
+        "sv2reason": "3 varningar inom 3 timmar eller om varningen \u00e4r aktiv mer \u00e4n 30 minuter.",
+        "sv2action": "Kontrollera v\u00e4rmekurva och varmvatteninst\u00e4llningar."
     },
     "5514": {
         "level": "Installer",
@@ -1716,7 +1748,11 @@
         ],
         "svdescription": "Kan vara ett fl\u00f6desproblem. Kontrollera s\u00e5 att termostater \u00e4r \u00f6ppna p\u00e5 v\u00e4rmesystemet. Filter kan vara igensatt p\u00e5 v\u00e4rmeb\u00e4rarsidan. Lufta systemet. Se instruktionsfilmer knappen h\u00e4r bredvid. Om detta inte hj\u00e4lper, kontakta er installat\u00f6r. ",
         "svheader": "Larm l\u00e5g f\u00f6r\u00e5ngning JR0 i v\u00e4rmepump L\u00e5gtryckslarm.",
-        "svheatpump": "IVT Geo 312/412 Bergv\u00e4rmepump"
+        "svheatpump": "IVT Geo 312/412 Bergv\u00e4rmepump",
+        "sv2category": "H01",
+        "sv2header": "L\u00e5gtrycksvarning JR0 i v\u00e4rmepump Z1",
+        "sv2reason": "Om temperaturen p\u00e5 givare PL1 understiger gr\u00e4nsv\u00e4rdet i 30 sekunder.",
+        "sv2action": "Kontrollera inst\u00e4llning f\u00f6r l\u00e4gsta utetemperatur."
     },
     "5515": {
         "level": "Customer",
@@ -1730,7 +1766,11 @@
         ],
         "svdescription": "L\u00e5gtryckslarm. Kontrollera s\u00e5 att inte fl\u00e4kten \u00e4r blockerad. Annars kontakta Er installat\u00f6r. Se instruktionsfilmer via l\u00e4nken.",
         "svheader": "Larm l\u00e5g f\u00f6r\u00e5ngning JR0 i v\u00e4rmepump.",
-        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump "
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "sv2category": "A01",
+        "sv2header": "Larm l\u00e5g f\u00f6r\u00e5ngning JR0 i v\u00e4rmepump Z1",
+        "sv2reason": "3 varningar inom 3 timmar eller om varningen \u00e4r aktiv mer \u00e4n 30 minuter.",
+        "sv2action": "Kontrollera inst\u00e4llning f\u00f6r l\u00e4gsta utetemperatur."
     },
     "5522": {
         "level": "Installer",
@@ -1749,7 +1789,11 @@
                 "reason": "When replacing installer module, the rotary encoder has not been set up properly on the new board.",
                 "action": "Check setting of the rotary encoder, compare it to old board."
             }
-        ]
+        ],
+        "sv2category": "A01",
+        "sv2header": "Fel kombination av v\u00e4rmepump och innedel",
+        "sv2reason": "V\u00e4rmepumpen och v\u00e4rmepumpsmodulen passar inte ihop.",
+        "sv2action": "Byt till r\u00e4tt kombination."
     },
     "5523": {
         "level": "Installer",
@@ -1760,7 +1804,11 @@
                 "reason": "Internal error in inverter.",
                 "action": "Temporary malfunction. Await possible alarm in customer level (code 5524), until applying further actions.."
             }
-        ]
+        ],
+        "sv2category": "A01",
+        "sv2header": "Varning v\u00e4rmepump Z1. Internt fel p\u00e5 kompressordriver 3",
+        "sv2reason": "7 varningar inom 3 timmar eller om varningen \u00e4r aktiv mer \u00e4n 30 minuter. Kan orsakas av korta sp\u00e4nningsfall.",
+        "sv2action": "Ingen \u00e5tg\u00e4rd."
     },
     "5524": {
         "level": "Customer",
@@ -1774,7 +1822,11 @@
         ],
         "svdescription": "Kan vara falsklarm vid ev. str\u00f6mavbrott. Vid \u00e5terkommande larm \u00e4r det fel i inverter eller kompressor. Kontakta Er installat\u00f6r.",
         "svheader": "Larm v\u00e4rmepump \u00f6verstr\u00f6m av kompressordrivern.",
-        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump "
+        "svheatpump": "IVT AirSplit 200 Luft/vattenv\u00e4rmepump ",
+        "sv2category": "H01",
+        "sv2header": "Larm v\u00e4rmepump Z1. PFC Internt fel p\u00e5 kompressorn 3",
+        "sv2reason": "Larm som f\u00f6ljd av varning 5523.",
+        "sv2action": "Kvittera larmet. Kontakta service vid upprepade larm."
     },
     "5527": {
         "level": "Customer",
@@ -1785,7 +1837,11 @@
                 "reason": "Heat pump overfilled.",
                 "action": "Evacuate heat pump and refill with quantity specifed on type plate."
             }
-        ]
+        ],
+        "sv2category": "H01",
+        "sv2header": "Larm v\u00e4rmepump Z1. f\u00f6r mycket k\u00f6ldmedium i v\u00e4rmepumpen",
+        "sv2reason": "",
+        "sv2action": "Kontakta service."
     },
     "5531": {
         "level": "Installer",
@@ -1804,7 +1860,11 @@
                 "reason": "Defective I/O module.",
                 "action": "Replace I/O module."
             }
-        ]
+        ],
+        "sv2category": "A01",
+        "sv2header": "Varning v\u00e4rmepump Z1. Kompressorgivare TR1 avbrott",
+        "sv2reason": "Efter ett antal detekterade fel aktiveras underh\u00e5llsinstruktion",
+        "sv2action": "M\u00e4t upp givare och byt ut felaktig komponent."
     },
     "5532": {
         "level": "Installer",
@@ -1819,7 +1879,11 @@
                 "reason": "Defective I/O module.",
                 "action": "Replace I/O module."
             }
-        ]
+        ],
+        "sv2category": "A01",
+        "sv2header": "Varning v\u00e4rmepump Z1. Kompressorgivare TR1 kortsluten",
+        "sv2reason": "Efter ett antal detekterade fel aktiveras underh\u00e5llsinstruktion",
+        "sv2action": "M\u00e4t upp givare och byt ut felaktig komponent."
     },
     "5533": {
         "level": "Customer",
@@ -1830,7 +1894,11 @@
                 "reason": "See possible causes for warning codes 5531, 5532.",
                 "action": "See possible actions for warning codes 5531, 5532."
             }
-        ]
+        ],
+        "sv2category": "H01",
+        "sv2header": "Larm v\u00e4rmepump Z1. Kompressorgivare TR1 trasig",
+        "sv2reason": "Efter ett antal detekterade varningar 5531 och 5532 aktiveras larmet.",
+        "sv2action": "M\u00e4t upp givare och byt ut felaktig komponent."
     },
     "5541": {
         "level": "Customer",
