@@ -1566,6 +1566,34 @@
         "sv2reason": "F\u00f6r h\u00f6g temperatur till golvv\u00e4rmekretsen.",
         "sv2action": "Justera inst\u00e4llningen av v\u00e4rmekurvan."
     },
+    "5501": {
+	"level": "Customer",
+	"title": "JR0 Larm Rengör värmepumpen Z2",
+	"sv2category": "H01",
+	"sv2header": "JR0 Larm Rengör värmepumpen Z2",
+	"sv2reason": "Upprepat PL1 larm i värmedrift.",
+	"sv2action": "Rengör dropplåten i värmepump Z2.",
+	"alternatives": [
+	    {
+		"sv2reason": "Upprepat PL1 larm i värmedrift.",
+		"sv2action": "Rengör dropplåten i värmepump Z2."
+	    }
+	]
+    },
+    "5502": {
+	"level": "Customer",
+	"title": "Elvärmaren i droppskålen i värmepump Z2 ur funktion",
+	"sv2category": "H01",
+	"sv2header": "Elvärmaren i droppskålen i värmepump Z2 ur funktion",
+	"sv2reason": "Givare TA4 går ej över 5 °C vid avfrostning.",
+	"sv2action": "Kontrollera funktion av elvärmare och givare i värmepump Z2. Byt felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Givare TA4 går ej över 5 °C vid avfrostning.",
+		"action": "Kontrollera funktion av elvärmare och givare i värmepump Z2. Byt felaktig komponent."
+	    }
+	]
+    },
     "5503": {
         "level": "Installer",
         "title": "Warning Connection problem with the power guard",
@@ -1611,6 +1639,20 @@
         "sv2header": "Alarm Anslutningen till belastningsvakten \u00e4r avbruten",
         "sv2reason": "Ingen kontakt med belastningsvakten.",
         "sv2action": "Kontrollera kabel och anslutningar av CAN-BUS."
+    },
+    "5505": {
+	"level": "Customer",
+	"title": "Elvärmaren i droppskålen i värmepump Z1 ur funktion",
+	"sv2category": "H01",
+	"sv2header": "Elvärmaren i droppskålen i värmepump Z1 ur funktion",
+	"sv2reason": "Givare TA4 går ej över 5 °C vid avfrostning.",
+	"sv2action": "Kontrollera funktion av elvärmare och givare i värmepump Z1. Byt felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Givare TA4 går ej över 5 °C vid avfrostning.",
+		"action": "Kontrollera funktion av elvärmare och givare i värmepump Z1. Byt felaktig komponent."
+	    }
+	]
     },
     "5506": {
         "level": "Installer",
@@ -1674,6 +1716,48 @@
         "sv2header": "MR1 h\u00f6gtryckslarm A i v\u00e4rmepump Z1",
         "sv2reason": "H\u00f6gt tryck i k\u00f6ldmediekretsen. 3 varningar inom 3 timmar eller om varningen \u00e4r aktiv mer \u00e4n 30 minuter.",
         "sv2action": "Kontrollera v\u00e4rmekurva och varmvatteninst\u00e4llningar."
+    },
+    "5509": {
+	"level": "Customer",
+	"title": "MR1 högtryckslarm B i värmepump Z2",
+	"sv2category": "A01",
+	"sv2header": "MR1 högtryckslarm B i värmepump Z2",
+	"sv2reason": "Högt tryck i köldmediekretsen.",
+	"sv2action": "Kontrollera värmekurva och varmvatteninställningar.",
+	"alternatives": [
+	    {
+		"reason": "Högt tryck i köldmediekretsen.",
+		"action": "Kontrollera värmekurva och varmvatteninställningar."
+	    }
+	]
+    },
+    "5510": {
+	"level": "Customer",
+	"title": "MR1 högtryckslarm A i värmepump Z2",
+	"sv2category": "H01",
+	"sv2header": "MR1 högtryckslarm A i värmepump Z2",
+	"sv2reason": "Högt tryck i köldmediekretsen. 3 varningar inom 3 timmar eller om varningen är aktiv mer än 30 minuter.",
+	"sv2action": "Kontrollera värmekurva och varmvatteninställningar.",
+	"alternatives": [
+	    {
+		"reason": "Högt tryck i köldmediekretsen. 3 varningar inom 3 timmar eller om varningen är aktiv mer än 30 minuter.",
+		"action": "Kontrollera värmekurva och varmvatteninställningar."
+	    }
+	]
+    },
+    "5511": {
+	"level": "Customer",
+	"title": "Fel Kompressordriver installerad i värmepump Z1",
+	"sv2category": "A01",
+	"sv2header": "Fel Kompressordriver installerad i värmepump Z1",
+	"sv2reason": "Driver och kompressormodell stämmer ej överrens.",
+	"sv2action": "Kontakta service.",
+	"alternatives": [
+	    {
+		"reason": "Driver och kompressormodell stämmer ej överrens.",
+		"action": "Kontakta service."
+	    }
+	]
     },
     "5512": {
         "level": "Installer",
@@ -1772,6 +1856,76 @@
         "sv2reason": "3 varningar inom 3 timmar eller om varningen \u00e4r aktiv mer \u00e4n 30 minuter.",
         "sv2action": "Kontrollera inst\u00e4llning f\u00f6r l\u00e4gsta utetemperatur."
     },
+    "5517": {
+	"level": "Customer",
+	"title": "Fel Kompressordriver installerad i värmepump Z2",
+	"sv2category": "A01",
+	"sv2header": "Fel Kompressordriver installerad i värmepump Z2",
+	"sv2reason": "Driver och kompressormodell stämmer ej överrens.",
+	"sv2action": "Kontakta service.",
+	"alternatives": [
+	    {
+		"reason": "Driver och kompressormodell stämmer ej överrens.",
+		"action": "Kontakta service."
+	    }
+	]
+    },
+    "5518": {
+	"level": "Customer",
+	"title": "Kondenseringstemperaturen utanför envelopen i värmepump Z2",
+	"sv2category": "H01",
+	"sv2header": "Kondenseringstemperaturen utanför envelopen i värmepump Z2",
+	"sv2reason": "Temperaturen på givare PH1 överstiger gränsvärdet i 30 sekunder.",
+	"sv2action": "Kontrollera värmekurva och varmvatteninställningar.",
+	"alternatives": [
+	    {
+		"reason": "Temperaturen på givare PH1 överstiger gränsvärdet i 30 sekunder.",
+		"action": "Kontrollera värmekurva och varmvatteninställningar."
+	    }
+	]
+    },
+    "5519": {
+	"level": "Customer",
+	"title": "För hög kondensering i värmepump Z2",
+	"sv2category": "H01",
+	"sv2header": "För hög kondensering i värmepump Z2",
+	"sv2reason": "3 varningar inom 3 timmar eller om varningen är aktiv mer än 30 minuter.",
+	"sv2action": "Kontrollera värmekurva och varmvatteninställningar.",
+	"alternatives": [
+	    {
+		"reason": "3 varningar inom 3 timmar eller om varningen är aktiv mer än 30 minuter.",
+		"action": "Kontrollera värmekurva och varmvatteninställningar."
+	    }
+	]
+    },
+    "5520": {
+	"level": "Customer",
+	"title": "Lågtrycksvarning JR0 i värmepump Z2",
+	"sv2category": "H01",
+	"sv2header": "Lågtrycksvarning JR0 i värmepump Z2",
+	"sv2reason": "Om temperaturen på givare PL1 understiger gränsvärdet i 30 sekunder.",
+	"sv2action": "Kontrollera inställning för lägsta utetemperatur.",
+	"alternatives": [
+	    {
+		"reason": "Om temperaturen på givare PL1 understiger gränsvärdet i 30 sekunder.",
+		"action": "Kontrollera inställning för lägsta utetemperatur."
+	    }
+	]
+    },
+    "5521": {
+	"level": "Customer",
+	"title": "Larm låg förångning JR0 i värmepump Z2",
+	"sv2category": "A01",
+	"sv2header": "Larm låg förångning JR0 i värmepump Z2",
+	"sv2reason": "3 varningar inom 3 timmar eller om varningen är aktiv mer än 30 minuter.",
+	"sv2action": "Kontrollera inställning för lägsta utetemperatur.",
+	"alternatives": [
+	    {
+		"reason": "3 varningar inom 3 timmar eller om varningen är aktiv mer än 30 minuter.",
+		"action": "Kontrollera inställning för lägsta utetemperatur."
+	    }
+	]
+    },
     "5522": {
         "level": "Installer",
         "title": "Alarm Wrong combination of indoor and outdoor units.",
@@ -1828,6 +1982,20 @@
         "sv2reason": "Larm som f\u00f6ljd av varning 5523.",
         "sv2action": "Kvittera larmet. Kontakta service vid upprepade larm."
     },
+    "5526": {
+	"level": "Customer",
+	"title": "Larm värmepump Z2. defr. Rengör värmepumpens utedel",
+	"sv2category": "A01",
+	"sv2header": "Larm värmepump Z2. defr. Rengör värmepumpens utedel",
+	"sv2reason": "Mer än 3 defrost starter på minimum värmetid.",
+	"sv2action": "Rengör värmepmpens dropplåt. Kontrollera avfrostningsfunktionen.",
+	"alternatives": [
+	    {
+		"reason": "Mer än 3 defrost starter på minimum värmetid.",
+		"action": "Rengör värmepmpens dropplåt. Kontrollera avfrostningsfunktionen."
+	    }
+	]
+    },
     "5527": {
         "level": "Customer",
         "title": "Alarm Z1 Too much refrigerant in cooling circuit",
@@ -1842,6 +2010,48 @@
         "sv2header": "Larm v\u00e4rmepump Z1. f\u00f6r mycket k\u00f6ldmedium i v\u00e4rmepumpen",
         "sv2reason": "",
         "sv2action": "Kontakta service."
+    },
+    "5528": {
+	"level": "Customer",
+	"title": "Varning värmepump Z2. Kompressorgivare TR1 avbrott",
+	"sv2category": "A01",
+	"sv2header": "Varning värmepump Z2. Kompressorgivare TR1 avbrott",
+	"sv2reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
+    },
+    "5529": {
+	"level": "Customer",
+	"title": "Varning värmepump Z2. Kompressorgivare TR1 kortsluten",
+	"sv2category": "H01",
+	"sv2header": "Varning värmepump Z2. Kompressorgivare TR1 kortsluten",
+	"sv2reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
+    },
+    "5530": {
+	"level": "Customer",
+	"title": "Larm värmepump Z2. Kompressorgivare TR1 trasig",
+	"sv2category": "A01",
+	"sv2header": "Larm värmepump Z2. Kompressorgivare TR1 trasig",
+	"sv2reason": "Efter ett antal detekterade varningar 5531 och 5532 aktiveras larmet.",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade varningar 5531 och 5532 aktiveras larmet.",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
     },
     "5531": {
         "level": "Installer",
@@ -1899,6 +2109,104 @@
         "sv2header": "Larm v\u00e4rmepump Z1. Kompressorgivare TR1 trasig",
         "sv2reason": "Efter ett antal detekterade varningar 5531 och 5532 aktiveras larmet.",
         "sv2action": "M\u00e4t upp givare och byt ut felaktig komponent."
+    },
+    "5534": {
+	"level": "Customer",
+	"title": "Varning värmepump Z2 temperaturgivare TA4 avbrott",
+	"sv2category": "A01",
+	"sv2header": "Varning värmepump Z2 temperaturgivare TA4 avbrott",
+	"sv2reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
+    },
+    "5535": {
+	"level": "Customer",
+	"title": "Varning värmepump Z2 temperaturgivare TA4 kortsluten",
+	"sv2category": "A01",
+	"sv2header": "Varning värmepump Z2 temperaturgivare TA4 kortsluten",
+	"sv2reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
+    },
+    "5536": {
+	"level": "Customer",
+	"title": "Larm värmepump Z2 temperaturgivare TA4 trasig",
+	"sv2category": "H01",
+	"sv2header": "Larm värmepump Z2 temperaturgivare TA4 trasig",
+	"sv2reason": "Efter ett antal detekterade varningar 5534 och 5535 aktiveras larmet.",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade varningar 5534 och 5535 aktiveras larmet.",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
+    },
+    "5537": {
+	"level": "Customer",
+	"title": "Slangar mellan innedel och värmepump Z2 är växlade",
+	"sv2category": "H01",
+	"sv2header": "Slangar mellan innedel och värmepump Z2 är växlade",
+	"sv2reason": "Aktiveras om temperaturen på givare T7 är inom 1K från T9 och PH1 är mer än 10K högre än T7 under värme eller varmvattenproduction.",
+	"sv2action": "Växla slangarna till värmepumpen.",
+	"alternatives": [
+	    {
+		"reason": "Aktiveras om temperaturen på givare T7 är inom 1K från T9 och PH1 är mer än 10K högre än T7 under värme eller varmvattenproduction.",
+		"action": "Växla slangarna till värmepumpen."
+	    }
+	]
+    },
+    "5538": {
+	"level": "Customer",
+	"title": "Varning värmepump Z1. temperaturgivare TA4 avbrott",
+	"sv2category": "A01",
+	"sv2header": "Varning värmepump Z1. temperaturgivare TA4 avbrott",
+	"sv2reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
+    },
+    "5539": {
+	"level": "Customer",
+	"title": "Varning värmepump Z1. temperaturgivare TA4 kortsluten",
+	"sv2category": "A01",
+	"sv2header": "Varning värmepump Z1. temperaturgivare TA4 kortsluten",
+	"sv2reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade fel aktiveras underhållsinstruktion",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
+    },
+    "5540": {
+	"level": "Customer",
+	"title": "Larm värmepump Z1. temperaturgivare TA4 trasig",
+	"sv2category": "H01",
+	"sv2header": "Larm värmepump Z1. temperaturgivare TA4 trasig",
+	"sv2reason": "Efter ett antal detekterade varningar 5538 och 5539 aktiveras larmet.",
+	"sv2action": "Mät upp givare och byt ut felaktig komponent.",
+	"alternatives": [
+	    {
+		"reason": "Efter ett antal detekterade varningar 5538 och 5539 aktiveras larmet.",
+		"action": "Mät upp givare och byt ut felaktig komponent."
+	    }
+	]
     },
     "5541": {
         "level": "Customer",
