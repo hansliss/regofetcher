@@ -1,3 +1,5 @@
 config.ini
 notifications_save.txt
 plot.gpl
+regoVals_*.csv
+regoVals_*.png
