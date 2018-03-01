@@ -10,11 +10,11 @@ LOGFILE=$RUNDIR/regoVals_$PERIOD.csv
 
 if [ ! -f "$LOGFILE" ]; then
     done=no
-    if [ "$done" = "yes" ]; then
-	echo -n ","
-    fi
-    done=yes
     grep "^scalar:" $RUNDIR/URLs.txt | cut -d: -f2,3 | sed 's/:/ /' | while read status path; do
+        if [ "$done" = "yes" ]; then
+            echo -n ","
+        fi
+        done=yes
 	echo -n "$path"
     done > $LOGFILE
     echo >> $LOGFILE
