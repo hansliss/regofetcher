@@ -79,40 +79,43 @@ def main() :
             print(leaf)
                     
     else :
-        data = get(host, args.path, key)
+        try:
+            data = get(host, args.path, key)
 
-        if args.mode == 'raw':
-            print(data)
-        elif args.mode == 'string':
-            print(data.decode())
-        elif args.mode == 'json':
-            pdata = json.loads(data.decode())
-            print(json.dumps(pdata, sort_keys=True, indent=4))
-        elif args.mode == 'value':
-            pdata = json.loads(data.decode())
-            print(pdata["value"])
-        elif args.mode == 'values':
-            pdata = json.loads(data.decode())
-            print(json.dumps(pdata["values"], sort_keys=True, indent=4))
-        elif args.mode == 'errcodes':
-            ecfile = config.get(args.configsection, 'errcodes');
-            with open(ecfile) as data_file:
-                errcodes = json.load(data_file)
-            pdata = json.loads(data.decode())
-            notifications=[]
-            for v in pdata["values"] :
-                note={}
-                note["orig"] = v
-                if str(v["ccd"]) in errcodes :
-                    note["explanation"] = errcodes[str(v["ccd"])]
-                notifications.append(note)
-            loader = FileLoader('')
-            template = loader.load_template(htmltemplate)
-            if notifications : 
-                print (template.render(locals(), loader=loader))
-            else :
-                print ('<html><head></head><body><h1>No active notifications</h1></body></html>');
-
+            if args.mode == 'raw':
+                print(data)
+            elif args.mode == 'string':
+                print(data.decode())
+            elif args.mode == 'json':
+                pdata = json.loads(data.decode())
+                print(json.dumps(pdata, sort_keys=True, indent=4))
+            elif args.mode == 'value':
+                pdata = json.loads(data.decode())
+                print(pdata["value"])
+            elif args.mode == 'values':
+                pdata = json.loads(data.decode())
+                print(json.dumps(pdata["values"], sort_keys=True, indent=4))
+            elif args.mode == 'errcodes':
+                ecfile = config.get(args.configsection, 'errcodes');
+                with open(ecfile) as data_file:
+                    errcodes = json.load(data_file)
+                pdata = json.loads(data.decode())
+                notifications=[]
+                for v in pdata["values"] :
+                    note={}
+                    note["orig"] = v
+                    if str(v["ccd"]) in errcodes :
+                        note["explanation"] = errcodes[str(v["ccd"])]
+                    notifications.append(note)
+                loader = FileLoader('')
+                template = loader.load_template(htmltemplate)
+                if notifications : 
+                    print (template.render(locals(), loader=loader))
+                else :
+                    print ('<html><head></head><body><h1>No active notifications</h1></body></html>');
+        except:
+            print ('N/A')
+            pass
 
 if __name__ == "__main__":
     main()
