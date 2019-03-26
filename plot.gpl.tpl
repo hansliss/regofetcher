@@ -20,7 +20,7 @@ set yrange [* < 0:]
 #set y2range [* < 0:]
 #set grid ytics ls 2
 set datafile separator ","
-set datafile missing 'nan'
+set datafile missing 'N/A'
 set grid xtics mxtics ls 1,ls 2
 
 set multiplot
