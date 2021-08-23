@@ -31,6 +31,24 @@ python3 getRegoData.py -c config.ini -s myrego -x -p "/,/dhwCircuits,/heatingCir
 
 Then change any values you don't need to fetch on every run to "off" in the file.
 
+If you just want to get a value, use e.g.
+
+```bash
+python3 getRegoData.py -c config.ini -s myrego -x -p "/dhwCircuits/dhw1/charge"
+```
+
+This will produce a JSon dump of that particular node, typically including type, accepted values and other info. If you just want to fetch the value, add '-m value':
+
+```bash
+python3 getRegoData.py -c config.ini -s myrego -x -p "/dhwCircuits/dhw1/charge -m value"
+```
+
+If you want to change a simple (writeable) string value, use '-S':
+
+```bash
+python3 getRegoData.py -c config.ini -s myrego -x -p "/dhwCircuits/dhw1/charge -m value -S start"
+```
+
 ## Operation
 **getVals.sh** uses the Python script to fetch individual values according to the list in **URLs.txt**,
 and adds an entry to a logfile on CSV format. All the values listed in URLs.txt will be represented
