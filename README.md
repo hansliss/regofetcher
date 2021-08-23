@@ -6,7 +6,7 @@ NOTE: [FHEM](http://www.fhem.de/) has a module called [KM200](https://wiki.fhem.
 should be able to talk to all those units. Give it a try, unless you want to use this as a
 base for playing around and building your own monitoring tools.
 
-## Setting up
+## Setting up (if you want to use the logging and monitoring scripts)
 This uses Quik for templating, for the notification system: https://github.com/avelino/quik
 
 Copy **config.ini.template** to **config.ini** and edit it, adding the information for your particular
@@ -31,6 +31,8 @@ python3 getRegoData.py -c config.ini -s myrego -x -p "/,/dhwCircuits,/heatingCir
 
 Then change any values you don't need to fetch on every run to "off" in the file.
 
+## Operation
+
 If you just want to get a value, use e.g.
 
 ```bash
@@ -49,7 +51,6 @@ If you want to change a simple (writeable) string value, use '-S':
 python3 getRegoData.py -c config.ini -s myrego -x -p "/dhwCircuits/dhw1/charge -m value -S start"
 ```
 
-## Operation
 **getVals.sh** uses the Python script to fetch individual values according to the list in **URLs.txt**,
 and adds an entry to a logfile on CSV format. All the values listed in URLs.txt will be represented
 as columns in the CSV file, but only the ones marked "on" will be fetched from the gateway.
