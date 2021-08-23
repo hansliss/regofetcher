@@ -126,3 +126,14 @@ scalar:on:/application/setpointScheduler/hc4/tbso/enable
 scalar:on:/application/setpointScheduler/hc4/tbso/roomTempOptDelta
 scalar:on:/application/tbso/electricity/tariffID
 scalar:on:/application/tbso/enable
+scalar:on:/dhwCircuits/dhw1/holidayMode/activated
+scalar:on:/gateway/update/status
+scalar:on:/heatingCircuits/hc1/currentSuWiMode
+scalar:on:/heatingCircuits/hc1/holidayMode/activated
+scalar:on:/heatingCircuits/hc1/supplyTemperatureSetpoint
+scalar:on:/heatingCircuits/hc1/suWiSwitchMode
+scalar:on:/heatSources/energyMonitoring/consumption
+scalar:on:/heatSources/energyMonitoring/maxTankLevel
+scalar:on:/heatSources/energyMonitoring/minTankLevel
+scalar:on:/heatSources/energyMonitoring/tankLevel
+scalar:on:/heatSources/poolTemperature
