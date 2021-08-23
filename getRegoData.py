@@ -24,6 +24,13 @@ def fetchData(host, path) :
     resp = opener.open(url)
     return resp.read()
 
+def postData(host, path, d) :
+    opener = urllib.request.build_opener()
+    opener.addheaders = [('User-agent', "TeleHeater/2.2.3"), ('Accept', "application/json"), ('Content-Type', 'application/json')]
+    url = 'http://' + host + path
+    resp = opener.open(url, data=d)
+    return resp.read()
+
 def decrypt(key, data) :
     BS = AES.block_size
     INTERRUPT = '\u0001'
@@ -32,9 +39,31 @@ def decrypt(key, data) :
     cleartext = decobj.decrypt(base64.b64decode(data))
     return cleartext.rstrip(PAD.encode()).rstrip(INTERRUPT.encode())
 
+def addPadding(data, interrupt, pad, block_size):
+    new_data = ''.join([data, interrupt])
+    new_data_len = len(new_data)
+    remaining_len = block_size - new_data_len
+    to_pad_len = remaining_len % block_size
+    pad_string = pad * to_pad_len
+    return ''.join([new_data, pad_string])
+                        
+def encrypt(key, data) :
+    BS = AES.block_size
+    INTERRUPT = '\u0001'
+    PAD = '\u0000'
+    encobj = AES.new(key, AES.MODE_ECB)
+    pdata = addPadding(data, INTERRUPT, PAD, AES.block_size)
+    ciphertext = base64.b64encode(encobj.encrypt(pdata))
+    return ciphertext
+
 def get(host, path, key) :
     response = fetchData(host, path)
     return decrypt(key, response)
+
+def post(host, path, key, data) :
+    cdata = encrypt(key, data)
+    response = postData(host, path, cdata)
+    return response
 
 def main() :
     parser = argparse.ArgumentParser(description='Read data from REGO2000')
@@ -43,9 +72,10 @@ def main() :
     parser.add_argument('-s', '--configsection', required=True)
     parser.add_argument('-p', '--path', required=True)
     parser.add_argument('-x', '--explore', action='store_true', help='use the list of starting points in <path> to fetch and enumerate all available URLs')
+    parser.add_argument('-S', '--set', help='Set a new value')
     args = parser.parse_args()
 
-    config = configparser.SafeConfigParser()
+    config = configparser.ConfigParser()
     config.read(args.configfile)
     host = config.get(args.configsection, 'host');
     vendorkey = config.get(args.configsection, 'vendorkey');
@@ -77,7 +107,15 @@ def main() :
         leaves.sort()
         for leaf in leaves :
             print(leaf)
-                    
+
+    elif args.set:
+        data = get(host, args.path, key)
+        pdata = json.loads(data.decode())
+        sys.stderr.write('Change value of ' + args.path + ' from ' + pdata["value"] + ' to ' + args.set + '\n')
+        newdict = {"value" : args.set}
+        newdata = json.dumps(newdict)
+        sys.stderr.write(post(host, args.path, key, newdata).decode())
+        
     else :
         data = get(host, args.path, key)
 
