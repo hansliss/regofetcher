@@ -1,5 +1,5 @@
 # regofetcher
-Scripts to fetch data from *IVT REGO2000*, *Bosch ProControl* and *Buderus Gateway Logamatic KM200*
+Scripts to fetch och change data on *IVT REGO2000*, *Bosch ProControl* and *Buderus Gateway Logamatic KM200*
 and other equipment based on similar network modules.
 
 NOTE: [FHEM](http://www.fhem.de/) has a module called [KM200](https://wiki.fhem.de/wiki/Buderus_Web_Gateway) that
@@ -70,12 +70,6 @@ run both scripts in /home/pi/regofetcher every ten minutes:
 ```
 
 ## Notes
-This is just a quick hack for now (and no, I haven't used Python before, and I'm not a fan),
-and it may be improved over time.
-
-It's also possible to change some settings using the same technique, presumably by encrypting
-input data using the same algorithm, and then using PUT to send it to the gateway. I have not
-tried this.
 
 Some examples of parameter formats for "/recordings":
 - ?interval=2018-01-31
