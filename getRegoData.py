@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import traceback
 import base64
 import json
 import binascii
@@ -102,7 +103,8 @@ def main() :
                 else :
                     leaves.append("unknown:" + sp)
             except:
-                sys.stderr.write('Caught exception\n')
+                sys.stderr.write('Caught exception!\n')
+                traceback.print_exc()
                 pass
         leaves.sort()
         for leaf in leaves :
