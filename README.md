@@ -48,7 +48,7 @@ python3 getRegoData.py -c config.ini -s myrego -p /dhwCircuits/dhw1/charge -m va
 If you want to change a simple (writeable) string value, use '-S':
 
 ```bash
-python3 getRegoData.py -c config.ini -s myrego -p /dhwCircuits/dhw1/charge -m value -S start
+python3 getRegoData.py -c config.ini -s myrego -p /dhwCircuits/dhw1/charge -S start
 ```
 
 **getVals.sh** uses the Python script to fetch individual values according to the list in **URLs.txt**,
