@@ -4,6 +4,7 @@ CONFFILE=$1
 SECTION=$2
 
 RUNDIR=`sed -n '/^\['"$SECTION"'\]/,/^\[/p' $CONFFILE | grep -i "^[ 	]*rundir" | cut -d: -f2 | sed 's/^[ 	]*\(.*\)[ 	]*$/\1/'`
+BINDIR=`dirname $0`
 
 PERIOD=`date +"%Y-%m"`
 LOGFILE=$RUNDIR/regoVals_$PERIOD.csv
@@ -27,7 +28,7 @@ grep "^scalar:" $RUNDIR/URLs.txt | cut -d: -f2,3 | sed 's/:/ /' | while read sta
     fi
     done=yes
     if [ "x$status" = "xon" ]; then
-	echo -n `python3 $RUNDIR/getRegoData.py -c $CONFFILE -s $SECTION -p $path -m value`
+	echo -n `python3 $BINDIR/getRegoData.py -c $CONFFILE -s $SECTION -p $path -m value`
     fi
 done >> $LOGFILE
 echo >> $LOGFILE

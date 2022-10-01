@@ -104,6 +104,7 @@ def main() :
                     leaves.append("unknown:" + sp)
             except:
                 sys.stderr.write('Caught exception!\n')
+                leaves.append("error:" + sp)
                 traceback.print_exc()
                 pass
         leaves.sort()
