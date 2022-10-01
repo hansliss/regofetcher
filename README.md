@@ -31,7 +31,7 @@ python3 getRegoData.py -c config.ini -s myrego -x -p "/,/dhwCircuits,/heatingCir
 
 Then change any values you don't need to fetch on every run to "off" in the file.
 
-* *Note that the list of URLs may be different at different times, as the controller enables or disables subsystems. You may want to redo this now and then.* *
+*Note that the list of URLs may be different at different times, as the controller enables or disables subsystems. You may want to redo this now and then.*
 
 ## Operation
 
